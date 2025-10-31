@@ -1,0 +1,17 @@
+{
+  "name": "tasky-landing",
+  "version": "1.0.0",
+  "description": "Standalone HTML/CSS landing page for Tasky System",
+  "scripts": {
+    "serve": "python3 -m http.server 8000",
+    "serve:node": "npx http-server . -p 8000",
+    "copy-assets": "bash copy-assets.sh"
+  },
+  "keywords": [
+    "landing-page",
+    "tasky",
+    "static-site"
+  ],
+  "author": "Tasky System",
+  "license": "MIT"
+}
