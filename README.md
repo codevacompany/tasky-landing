@@ -28,6 +28,7 @@ tasky-landing/
 │           ├── x-logo.svg
 │           ├── youtube.svg
 │           └── linkedin.svg
+├── vercel.json         # Vercel deployment configuration
 └── README.md
 ```
 
@@ -39,46 +40,69 @@ Copy the required images from the main project:
 
 ```bash
 # From the tasky-system root directory
-mkdir -p tasky-landing/assets/images/landing
+bash copy-assets.sh
 
-# Copy logo
-cp tasky-system/src/assets/images/tasky-white.png tasky-landing/assets/images/
-
-# Copy landing page images
-cp tasky-system/src/assets/images/landing/* tasky-landing/assets/images/landing/
+# Or manually:
+mkdir -p assets/images/landing
+cp ../tasky-system/src/assets/images/tasky-white.png assets/images/
+cp ../tasky-system/src/assets/images/landing/* assets/images/landing/
 ```
 
 ### 2. Local Development
 
-You can serve this locally using any static file server:
+**Important:** When developing locally, use relative paths (which are already set in the HTML). Make sure you're running a local server from the `tasky-landing` directory.
 
 **Using Python:**
+
 ```bash
 cd tasky-landing
 python3 -m http.server 8000
 ```
 
+Then open `http://localhost:8000/index.html`
+
 **Using Node.js (http-server):**
+
 ```bash
 npx http-server tasky-landing -p 8000
 ```
 
-**Using PHP:**
-```bash
-cd tasky-landing
-php -S localhost:8000
-```
+**Using VS Code Live Server:**
 
-Then open `http://localhost:8000` in your browser.
+- Right-click on `index.html` → "Open with Live Server"
+- Make sure the root directory is set to `tasky-landing`
 
-### 3. Deployment
+### 3. Deployment to Vercel
 
-This project can be deployed to any static hosting service:
+The `vercel.json` is configured to handle both relative and absolute paths. When you deploy:
 
-- **Vercel**: Connect your GitHub repo and set the build directory to `tasky-landing`
-- **Netlify**: Drag and drop the `tasky-landing` folder
-- **GitHub Pages**: Push to a `gh-pages` branch
-- **AWS S3**: Upload files to an S3 bucket with static website hosting enabled
+1. **Option A: Deploy `tasky-landing` folder directly**
+
+   - The relative paths will work as-is
+
+2. **Option B: Deploy from project root**
+
+   - If deploying from the main project root, Vercel will automatically serve files correctly
+
+3. **Deploy via Vercel CLI:**
+
+   ```bash
+   cd tasky-landing
+   vercel
+   ```
+
+4. **Deploy via GitHub:**
+   - Connect your GitHub repo to Vercel
+   - Set the root directory to `tasky-landing` in Vercel project settings
+   - Vercel will automatically detect and deploy
+
+**Note:** After deploying to Vercel, if paths don't work, you may need to update paths to absolute (starting with `/`) in `index.html`. The current setup uses relative paths which work locally and should work on Vercel if the root is set correctly.
+
+## Path Configuration
+
+- **Local development:** Uses relative paths (e.g., `styles.css`, `assets/images/...`)
+- **Vercel deployment:** The `vercel.json` handles path routing
+- **If issues persist:** Change paths to absolute (e.g., `/styles.css`, `/assets/images/...`) in `index.html`
 
 ## Features
 
@@ -108,8 +132,8 @@ Edit the CSS variables in `styles.css`:
 
 Update the links in `index.html` to point to your application:
 
-- `/login` - Login page
-- `/cadastrar` - Sign up page
+- `https://app.taskypro.com.br/login` - Login page
+- `https://app.taskypro.com.br/cadastrar` - Sign up page
 - Footer links (privacy, terms, etc.)
 
 ### Meta Tags
@@ -123,6 +147,26 @@ Update the Open Graph and Twitter Card meta tags in `index.html` with your actua
 - Safari (latest)
 - Edge (latest)
 
+## Troubleshooting
+
+### CSS not loading locally
+
+- Make sure you're running a local server (not opening `file://`)
+- Check that `styles.css` is in the same directory as `index.html`
+- Verify the server is running from the `tasky-landing` directory
+
+### Images not loading locally
+
+- Ensure the `assets` folder exists and contains all images
+- Run `bash copy-assets.sh` to copy assets from the main project
+- Check browser console for 404 errors
+
+### CSS not loading on Vercel
+
+- Verify `vercel.json` is present and correctly formatted
+- Check Vercel deployment logs
+- Try changing paths to absolute (starting with `/`) in `index.html`
+
 ## Notes
 
 - All images should be optimized for web before deployment
@@ -135,17 +179,18 @@ Update the Open Graph and Twitter Card meta tags in `index.html` with your actua
 This landing page was migrated from `tasky-system/src/pages/public/LandingPage.vue`:
 
 **Changes made:**
+
 - Converted Vue template to HTML
 - Converted Vue `<style scoped>` to external CSS
 - Replaced `router-link` with regular `<a>` tags
 - Removed Vue dependencies
 - Added SEO meta tags
 - Added smooth scroll JavaScript
-- Updated asset paths to relative paths
+- Updated asset paths to relative paths (work both locally and on Vercel)
 
 **Preserved:**
+
 - All styling and animations
 - All content and structure
 - Responsive breakpoints
 - Color scheme and branding
-
