@@ -1,19 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/styles.css",
-      "destination": "/styles.css"
-    },
-    {
-      "source": "/assets/:path*",
-      "destination": "/assets/:path*"
-    }
-  ],
   "headers": [
     {
-      "source": "/assets/(.*)",
+      "source": "/assets/:path*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -22,7 +12,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
+      "source": "/styles.css",
       "headers": [
         {
           "key": "Cache-Control",
