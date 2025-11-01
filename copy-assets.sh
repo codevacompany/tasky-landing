@@ -24,6 +24,25 @@ else
   echo "⚠ Warning: landing directory not found"
 fi
 
+# Copy favicons
+FAVICON_SOURCE_DIR="../tasky-system/public"
+FAVICON_TARGET_DIR="./assets/favicons"
+mkdir -p "$FAVICON_TARGET_DIR"
+
+# favicon.ico goes to root (browser default lookup)
+if [ -f "$FAVICON_SOURCE_DIR/favicon.ico" ]; then
+  cp "$FAVICON_SOURCE_DIR/favicon.ico" .
+  echo "✓ Copied favicon.ico to root"
+fi
+
+# Other favicons go to assets/favicons/
+if [ -f "$FAVICON_SOURCE_DIR/favicon-16x16.png" ]; then
+  cp "$FAVICON_SOURCE_DIR/favicon-16x16.png" "$FAVICON_SOURCE_DIR/favicon-32x32.png" "$FAVICON_SOURCE_DIR/apple-touch-icon.png" "$FAVICON_TARGET_DIR/"
+  echo "✓ Copied favicons to assets/favicons/"
+else
+  echo "⚠ Warning: favicons not found"
+fi
+
 echo ""
 echo "Assets copied successfully!"
 echo ""
