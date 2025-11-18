@@ -1,6 +1,13 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/pricing",
+      "destination": "/precos",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/:path*",
