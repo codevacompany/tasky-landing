@@ -107,6 +107,11 @@ img {
   padding-bottom: 0;
   position: relative;
   overflow: hidden;
+  height: 100vh;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .navbar {
@@ -117,12 +122,14 @@ img {
   padding: 1.5rem 4rem;
   margin: 0 auto;
   background: transparent;
+  width: 100%;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  gap: 10rem;
+  gap: 4rem;
+  flex: 0 0 auto;
 }
 
 .logo {
@@ -159,6 +166,8 @@ img {
   display: flex;
   gap: 2rem;
   align-items: center;
+  flex: 0 0 auto;
+  margin-left: auto;
 }
 
 .login-btn {
@@ -186,9 +195,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.5rem 4rem;
+  padding: 4rem 4rem 6rem 4rem;
   max-width: 1500px;
   margin: 0 auto;
+  flex: 1;
 }
 
 .hero-text {
@@ -196,13 +206,13 @@ img {
 }
 
 .hero-text h1 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
   opacity: 0.9;
 }
@@ -213,7 +223,7 @@ img {
 }
 
 .hero-image {
-  width: 36%;
+  width: 42%;
   display: flex;
   justify-content: flex-end;
 }
@@ -221,6 +231,7 @@ img {
 .hero-image img {
   max-width: 100%;
   animation: float 3s ease-in-out infinite;
+  border-radius: 16px;
 }
 
 @keyframes float {
@@ -357,9 +368,9 @@ img {
 }
 
 .feature-detail-content p {
-  color: #6b7280;
+  color: #4b5563;
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .feature-list {
@@ -370,7 +381,9 @@ img {
 .feature-list li {
   padding-left: 1.5rem;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
+  font-weight: 400;
+  font-size: 1.125rem;
 }
 
 .feature-list li::before {
@@ -389,7 +402,7 @@ img {
 }
 
 .feature-detail-image img {
-  max-width: 100%;
+  max-width: 90%;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
