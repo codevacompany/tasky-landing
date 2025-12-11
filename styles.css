@@ -446,18 +446,66 @@ img {
   background-color: #f6f9ff;
 }
 
+/* Scroll animation styles */
 .feature-detail {
   display: flex;
   align-items: center;
   gap: 4rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.feature-detail.reverse {
-  flex-direction: row-reverse;
+.feature-detail.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .feature-detail-content {
   flex: 1;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out 0.3s, transform 0.8s ease-out 0.3s;
+}
+
+.feature-detail.animate .feature-detail-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.feature-detail.reverse .feature-detail-content {
+  transform: translateX(50px);
+}
+
+.feature-detail.reverse.animate .feature-detail-content {
+  transform: translateX(0);
+}
+
+.feature-detail-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s ease-out 0.5s, transform 0.8s ease-out 0.5s;
+}
+
+.feature-detail.animate .feature-detail-image {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.feature-detail.reverse .feature-detail-image {
+  transform: translateX(-50px);
+}
+
+.feature-detail.reverse.animate .feature-detail-image {
+  transform: translateX(0);
+}
+
+.feature-detail.reverse {
+  flex-direction: row-reverse;
 }
 
 .feature-detail-content h2 {
@@ -493,17 +541,10 @@ img {
   font-weight: bold;
 }
 
-.feature-detail-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .feature-detail-image img {
-  max-width: 90%;
+  max-width: 98%;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
 
 /* Pricing Section */
@@ -1223,6 +1264,16 @@ img {
     margin-left: 0;
     text-align: center;
     width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .hero-buttons {
+    margin-bottom: 2rem;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
   }
 }
 
