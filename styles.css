@@ -310,7 +310,7 @@ img {
 }
 
 .subtitle {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
   opacity: 0.9;
   line-height: 1.5;
@@ -514,31 +514,12 @@ img {
   font-weight: 700;
 }
 
-.feature-detail-content p {
-  color: #4b5563;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-}
-
-.feature-list {
+.feature-description {
   list-style-type: none;
   padding: 0;
-}
-
-.feature-list li {
-  padding-left: 1.5rem;
-  position: relative;
   margin-bottom: 0.6rem;
   font-weight: 400;
-  font-size: 1.125rem;
-}
-
-.feature-list li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: var(--success-color);
-  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .feature-detail-image img {
@@ -865,14 +846,14 @@ img {
 
 .cta-section h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
   font-weight: 700;
 }
 
 .cta-section p {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto 2rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   opacity: 0.9;
 }
 
@@ -880,14 +861,15 @@ img {
 .site-footer {
   background: var(--secondary-dark);
   color: white;
-  padding-top: 4rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4rem;
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0;
 }
 
 .simplified-footer {
@@ -1226,7 +1208,8 @@ img {
 
 @media (max-width: 768px) {
   .site-footer {
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
   }
 
   .simplified-footer {
