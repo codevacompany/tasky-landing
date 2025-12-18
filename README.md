@@ -1,6 +1,6 @@
 # Tasky Landing Page
 
-Standalone HTML/CSS landing page for Tasky System, optimized for SEO and performance.
+Standalone HTML/CSS landing page for Tasky Pro, optimized for SEO and performance.
 
 ## Overview
 
