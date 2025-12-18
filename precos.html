@@ -80,7 +80,7 @@
                 >
                   <div class="plan-card-header">
                     <div class="plan-title-group">
-                      <p class="plan-name">Plano Iniciante</p>
+                      <p class="plan-name">Plano Básico</p>
                       <span class="plan-context"
                         >Ideal para microempresas e startups</span
                       >
@@ -113,7 +113,7 @@
                 >
                   <div class="plan-card-header">
                     <div class="plan-title-group">
-                      <p class="plan-name">Plano Crescer</p>
+                      <p class="plan-name">Plano Essencial</p>
                       <span class="plan-context"
                         >Ideal para empresas em crescimento</span
                       >
@@ -129,7 +129,7 @@
                   <p class="annual-saving" data-annual-saving></p>
                   <ul class="plan-features">
                     <li>Até 15 usuários</li>
-                    <li>Todas as funcionalidades do Iniciante</li>
+                    <li>Todas as funcionalidades do Básico</li>
                     <li>Analytics básicos</li>
                     <li>Notificações por e-mail</li>
                   </ul>
@@ -147,7 +147,7 @@
                 >
                   <div class="plan-card-header">
                     <div class="plan-title-group">
-                      <p class="plan-name">Plano Profissional</p>
+                      <p class="plan-name">Plano Avançado</p>
                       <span class="plan-context"
                         >Ideal para empresas médias</span
                       >
@@ -162,7 +162,7 @@
                   <p class="annual-saving" data-annual-saving></p>
                   <ul class="plan-features">
                     <li>Até 30 usuários</li>
-                    <li>Todas as funcionalidades do Crescer</li>
+                    <li>Todas as funcionalidades do Essencial</li>
                     <li>Analytics avançados</li>
                     <li>Exportação de relatórios</li>
                     <li>Supervisores por departamento</li>
@@ -188,24 +188,18 @@
                       >
                     </div>
                   </div>
-                  <div class="plan-price">
-                    <span class="currency">R$</span>
-                    <span class="value" data-price>399</span>
-                    <span class="period">/mês</span>
+                  <div class="custom-plan-description">
+                    <p>
+                      Simule o custo mensal baseado no número de usuários da sua
+                      equipe.
+                    </p>
                   </div>
-                  <p class="billing-note" data-billing-note>Cobrança anual</p>
-                  <p class="custom-plan-note">
-                    + R$ 15,00 por usuário adicional (a partir do 31º usuário)
-                  </p>
                   <ul class="plan-features">
-                    <li>30 usuários inclusos</li>
-                    <li>Todas as funcionalidades do Profissional</li>
-                    <li>Escalável conforme sua necessidade</li>
+                    <li>Sem limite máximo de usuários</li>
+                    <li>Acesso a todas as funcionalidades</li>
                   </ul>
-                  <a
-                    href="https://app.taskypro.com.br/cadastrar"
-                    class="btn plan-btn ghost"
-                    >Fale com vendas</a
+                  <a href="simular-plano.html" class="btn btn-primary plan-btn"
+                    >Simular Agora</a
                   >
                 </article>
               </div>
@@ -324,6 +318,9 @@
           toggle.classList.toggle("active", billingMode === "anual");
 
           planCards.forEach((card) => {
+            // Skip custom plan card as it doesn't have a price
+            if (card.dataset.customPlan === "true") return;
+
             const monthlyPrice = Number(card.dataset.priceMonthly);
             const yearlyTotal = Number(card.dataset.priceYearly);
             const priceEl = card.querySelector("[data-price]");

@@ -771,6 +771,18 @@ img {
   font-style: italic;
 }
 
+.custom-plan-description {
+  margin-bottom: 1.5rem;
+  margin-top: -0.75rem;
+}
+
+.custom-plan-description p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin: 0;
+}
+
 .annual-saving {
   font-size: 0.85rem;
   color: rgba(22, 208, 137, 0.85);
@@ -1285,6 +1297,224 @@ img {
   .hero-buttons {
     margin: 0;
   }
+}
+
+/* Simulation Page Styles */
+.simulation-section {
+  padding: 4rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+.simulation-billing-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: rgba(16, 27, 64, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 0.4rem 0.75rem;
+  margin: 2rem auto 2.5rem;
+  position: relative;
+  width: fit-content;
+}
+
+.simulation-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #ffffff;
+}
+
+.back-link span {
+  font-size: 1.2rem;
+}
+
+.simulation-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.simulation-header p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.simulation-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2.5rem;
+}
+
+.simulation-input-section {
+  margin-bottom: 2rem;
+}
+
+.input-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.simulation-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.simulation-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.simulation-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-hint {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.calculation-summary {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.calculation-summary h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.calculation-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.calculation-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.calculation-value {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.calculation-total {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.calculation-total-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.simulation-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.simulation-btn {
+  flex: 1;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.simulation-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.simulation-btn.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.simulation-btn.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .simulation-section {
+    padding: 2rem 0;
+  }
+
+  .simulation-header h1 {
+    font-size: 2rem;
+  }
+
+  .simulation-header p {
+    font-size: 1rem;
+  }
+
+  .simulation-card {
+    padding: 1.5rem;
+  }
+
+  .simulation-actions {
+    flex-direction: column;
+  }
+
+  .calculation-total-value {
+    font-size: 1.1rem;
+  }
+}
 
   .hero-image {
     margin: 3.5rem 0 1.5rem 0;

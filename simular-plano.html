@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simule o custo mensal do Plano Customizado do Tasky Pro baseado no número de usuários da sua equipe."
+    />
+    <title>Tasky Pro • Simular Plano Customizado</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="landing-page pricing-page">
+      <header class="hero-section">
+        <nav class="navbar">
+          <div class="menu">
+            <a href="index.html" class="logo">
+              <img src="assets/images/tasky-pro-white.png" alt="Tasky Logo" />
+            </a>
+            <div class="nav-links">
+              <a href="index.html#features">Produto</a>
+              <a href="precos.html" class="active-link">Preços</a>
+            </div>
+          </div>
+          <div class="auth-links">
+            <a href="https://app.taskypro.com.br/login" class="login-btn"
+              >Entrar</a
+            >
+            <a
+              href="https://app.taskypro.com.br/cadastrar"
+              class="btn btn-primary hero-button"
+              >COMECE GRÁTIS</a
+            >
+          </div>
+        </nav>
+
+        <div class="simulation-section">
+          <div class="container">
+            <div class="simulation-header">
+              <a href="precos.html" class="back-link">
+                <span>←</span> Voltar
+              </a>
+              <h1>Simular Plano Customizado</h1>
+              <p>
+                Informe o número de usuários para calcular o valor do plano
+                customizado
+              </p>
+            </div>
+
+            <div class="simulation-billing-wrapper">
+              <span class="billing-label" data-billing-option="mensal"
+                >Mensal</span
+              >
+              <button
+                id="billingToggle"
+                class="billing-toggle active"
+                type="button"
+                aria-label="Alternar forma de cobrança"
+              >
+                <span class="toggle-knob"></span>
+              </button>
+              <span class="billing-label active" data-billing-option="anual"
+                >Anual</span
+              >
+              <span class="discount-pill">20% OFF</span>
+            </div>
+
+            <div class="simulation-card">
+              <div class="simulation-input-section">
+                <label for="userCount" class="input-label"
+                  >Número de usuários</label
+                >
+                <input
+                  type="number"
+                  id="userCount"
+                  min="1"
+                  value="30"
+                  placeholder="Digite o número de usuários"
+                  class="simulation-input"
+                />
+                <p class="input-hint">
+                  O plano customizado inclui 30 usuários base. Usuários
+                  adicionais (a partir do 31º) custam R$ 15,00 cada.
+                </p>
+              </div>
+
+              <div
+                id="calculationSummary"
+                class="calculation-summary"
+                style="display: none"
+              >
+                <h3>Resumo do cálculo</h3>
+                <div class="calculation-details">
+                  <div class="calculation-row">
+                    <span>Plano base (até 30 usuários):</span>
+                    <span id="basePlanPrice" class="calculation-value"
+                      >R$ 399,00</span
+                    >
+                  </div>
+                  <div
+                    id="additionalUsersRow"
+                    class="calculation-row"
+                    style="display: none"
+                  >
+                    <span id="additionalUsersText">Usuários adicionais:</span>
+                    <span id="additionalUsersCost" class="calculation-value"
+                      >R$ 0,00</span
+                    >
+                  </div>
+                  <div
+                    id="annualNote"
+                    class="calculation-row"
+                    style="display: none"
+                  >
+                    <span></span>
+                    <span
+                      id="annualTotal"
+                      class="calculation-value"
+                      style="
+                        font-size: 0.85rem;
+                        color: rgba(255, 255, 255, 0.7);
+                      "
+                    ></span>
+                  </div>
+                  <div class="calculation-row calculation-total">
+                    <span id="totalLabel">Total mensal:</span>
+                    <span id="totalMonthlyPrice" class="calculation-total-value"
+                      >R$ 399,00</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="simulation-actions">
+                <a href="precos.html" class="btn btn-outline simulation-btn"
+                  >Cancelar</a
+                >
+                <button
+                  id="subscribeBtn"
+                  class="btn btn-primary simulation-btn"
+                  disabled
+                >
+                  Fale com vendas
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <footer class="site-footer">
+        <div class="container footer-content simplified-footer">
+          <div class="footer-left">
+            <div class="footer-logo-icons">
+              <img
+                src="assets/images/tasky-pro-white.png"
+                alt="Tasky Logo"
+                class="footer-logo"
+              />
+              <div class="social-icons">
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="assets/images/landing/youtube.svg"
+                    alt="Youtube Logo"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="assets/images/landing/linkedin.svg"
+                    alt="Linkedin Logo"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/taskyproapp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="assets/images/landing/instagram.svg"
+                    alt="Instagram Logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer-legal">
+              <a href="/privacy">Política de privacidade</a>
+              <a href="/terms">Termos de serviço</a>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <p>© Tasky Pro • Todos os direitos reservados</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Price calculation constants
+      const BASE_PRICE_MONTHLY = 399;
+      const BASE_PRICE_YEARLY_MONTHLY = 317; // R$ 317/month for annual billing
+      const BASE_USERS = 30;
+      const ADDITIONAL_USER_PRICE = 15; // Same price regardless of billing period
+
+      let billingMode = "anual"; // Default to annual
+
+      const userCountInput = document.getElementById("userCount");
+      const calculationSummary = document.getElementById("calculationSummary");
+      const additionalUsersRow = document.getElementById("additionalUsersRow");
+      const additionalUsersText = document.getElementById(
+        "additionalUsersText"
+      );
+      const additionalUsersCost = document.getElementById(
+        "additionalUsersCost"
+      );
+      const totalMonthlyPrice = document.getElementById("totalMonthlyPrice");
+      const basePlanPrice = document.getElementById("basePlanPrice");
+      const annualNote = document.getElementById("annualNote");
+      const annualTotal = document.getElementById("annualTotal");
+      const totalLabel = document.getElementById("totalLabel");
+      const subscribeBtn = document.getElementById("subscribeBtn");
+      const billingToggle = document.getElementById("billingToggle");
+      const billingLabels = document.querySelectorAll(".billing-label");
+
+      function formatPrice(value) {
+        // Round to 2 decimal places for display
+        return value
+          .toFixed(2)
+          .replace(".", ",")
+          .replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+      }
+
+      function calculatePrice() {
+        const userCount = parseInt(userCountInput.value) || 0;
+
+        if (userCount <= 0) {
+          calculationSummary.style.display = "none";
+          subscribeBtn.disabled = true;
+          return;
+        }
+
+        calculationSummary.style.display = "block";
+        subscribeBtn.disabled = false;
+
+        const isAnnual = billingMode === "anual";
+        const basePrice = isAnnual
+          ? BASE_PRICE_YEARLY_MONTHLY
+          : BASE_PRICE_MONTHLY;
+
+        const additionalUsers = Math.max(0, userCount - BASE_USERS);
+        const additionalCost = additionalUsers * ADDITIONAL_USER_PRICE;
+        const monthlyEquivalent = basePrice + additionalCost;
+        const yearlyTotal = isAnnual
+          ? basePrice * 12 + additionalCost * 12
+          : null;
+
+        // Update base plan price display
+        if (isAnnual) {
+          basePlanPrice.textContent = `R$ ${formatPrice(basePrice)}/mês`;
+        } else {
+          basePlanPrice.textContent = `R$ ${formatPrice(basePrice)}`;
+        }
+
+        // Update additional users row
+        if (additionalUsers > 0) {
+          additionalUsersRow.style.display = "flex";
+          additionalUsersText.textContent = `Usuários adicionais (${additionalUsers} usuário${
+            additionalUsers > 1 ? "s" : ""
+          }):`;
+          if (isAnnual) {
+            additionalUsersCost.textContent = `R$ ${formatPrice(
+              additionalCost
+            )}/mês`;
+          } else {
+            additionalUsersCost.textContent = `R$ ${formatPrice(
+              additionalCost
+            )}`;
+          }
+        } else {
+          additionalUsersRow.style.display = "none";
+        }
+
+        // Update annual note
+        if (isAnnual && yearlyTotal) {
+          annualNote.style.display = "flex";
+          annualTotal.textContent = `R$ ${formatPrice(
+            yearlyTotal
+          )} cobrado anualmente`;
+        } else {
+          annualNote.style.display = "none";
+        }
+
+        // Update total
+        totalLabel.textContent = isAnnual ? "Total mensal:" : "Total mensal:";
+        totalMonthlyPrice.textContent = `R$ ${formatPrice(monthlyEquivalent)}`;
+      }
+
+      function handleSubscribe() {
+        const userCount = parseInt(userCountInput.value) || 0;
+        if (userCount <= 0) return;
+
+        const isAnnual = billingMode === "anual";
+        const basePrice = isAnnual
+          ? BASE_PRICE_YEARLY_MONTHLY
+          : BASE_PRICE_MONTHLY;
+
+        const additionalUsers = Math.max(0, userCount - BASE_USERS);
+        const additionalCost = additionalUsers * ADDITIONAL_USER_PRICE;
+        const monthlyEquivalent = basePrice + additionalCost;
+        const yearlyTotal = isAnnual
+          ? basePrice * 12 + additionalCost * 12
+          : null;
+
+        const billingPeriod = isAnnual ? "anual" : "mensal";
+        const priceDisplay = isAnnual
+          ? `R$ ${monthlyEquivalent.toFixed(2)}/mês (R$ ${yearlyTotal.toFixed(
+              2
+            )}/ano)`
+          : `R$ ${monthlyEquivalent.toFixed(2)}/mês`;
+
+        const subject = encodeURIComponent(
+          `Interesse em Plano Customizado - ${userCount} usuários - ${priceDisplay}`
+        );
+        const body = encodeURIComponent(
+          `Olá,\n\nTenho interesse em assinar o Plano Customizado com as seguintes informações:\n\n` +
+            `- Número de usuários: ${userCount}\n` +
+            `- Forma de cobrança: ${billingPeriod}\n` +
+            `- Valor calculado: ${priceDisplay}\n` +
+            `- Usuários adicionais: ${additionalUsers}\n\n` +
+            `Aguardo retorno para prosseguir com a assinatura.\n\nAtenciosamente`
+        );
+
+        window.location.href = `mailto:comercial@tasky.com.br?subject=${subject}&body=${body}`;
+      }
+
+      function updateBillingMode() {
+        billingLabels.forEach((label) => {
+          const mode = label.dataset.billingOption;
+          label.classList.toggle("active", mode === billingMode);
+        });
+
+        billingToggle.classList.toggle("active", billingMode === "anual");
+        calculatePrice();
+      }
+
+      billingToggle.addEventListener("click", () => {
+        billingMode = billingMode === "anual" ? "mensal" : "anual";
+        updateBillingMode();
+      });
+
+      billingLabels.forEach((label) => {
+        label.addEventListener("click", () => {
+          const option = label.dataset.billingOption;
+          if (option) {
+            billingMode = option;
+            updateBillingMode();
+          }
+        });
+      });
+
+      userCountInput.addEventListener("input", calculatePrice);
+      subscribeBtn.addEventListener("click", handleSubscribe);
+
+      // Initialize billing mode and calculate initial price
+      updateBillingMode();
+    </script>
+  </body>
+</html>
