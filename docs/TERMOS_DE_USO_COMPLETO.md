@@ -88,11 +88,11 @@ Para os fins destes Termos de Uso, as seguintes definições se aplicam:
 - Garantir que todas as pessoas que acessam a Plataforma através de sua conta estejam cientes e cumpram estes Termos;
 - Sair de sua conta ao final de cada sessão de uso.
 
-4.2. **Acesso Não Autorizado**: A Tasky Pro não será responsável por qualquer perda ou dano decorrente do uso não autorizado de sua conta, exceto quando tal uso não autorizado resultar diretamente de falha da Tasky Pro em manter padrões razoáveis de segurança. _[REVISAR-ADV]_
+  4.2. **Acesso Não Autorizado**: A Tasky Pro não será responsável por qualquer perda ou dano decorrente do uso não autorizado de sua conta, exceto quando tal uso não autorizado resultar diretamente de falha da Tasky Pro em manter padrões razoáveis de segurança. _[REVISAR-ADV]_
 
-4.3. **Atividades na Conta**: Você reconhece e concorda que a Tasky Pro pode, a seu exclusivo critério, monitorar atividades na Plataforma para detectar uso não autorizado, fraude ou violação destes Termos.
+  4.3. **Atividades na Conta**: Você reconhece e concorda que a Tasky Pro pode, a seu exclusivo critério, monitorar atividades na Plataforma para detectar uso não autorizado, fraude ou violação destes Termos.
 
-4.4. **Suspensão por Segurança**: A Tasky Pro reserva-se o direito de suspender temporariamente sua conta se houver suspeita razoável de comprometimento de segurança ou violação destes Termos.
+  4.4. **Suspensão por Segurança**: A Tasky Pro reserva-se o direito de suspender temporariamente sua conta se houver suspeita razoável de comprometimento de segurança ou violação destes Termos.
 
 ---
 
@@ -115,7 +115,7 @@ Para os fins destes Termos de Uso, as seguintes definições se aplicam:
 - Criar contas falsas ou se passar por outra pessoa ou entidade;
 - Utilizar a Plataforma de forma que possa danificar, desabilitar, sobrecarregar ou comprometer nossos sistemas ou segurança.
 
-5.3. **Consequências da Violação**: A violação de qualquer uma das proibições acima pode resultar em suspensão imediata ou encerramento de sua conta, sem direito a reembolso, e pode sujeitar você a responsabilização civil e criminal. _[REVISAR-ADV]_
+  5.3. **Consequências da Violação**: A violação de qualquer uma das proibições acima pode resultar em suspensão imediata ou encerramento de sua conta, sem direito a reembolso, e pode sujeitar você a responsabilização civil e criminal. _[REVISAR-ADV]_
 
 ---
 
@@ -214,7 +214,7 @@ Para os fins destes Termos de Uso, as seguintes definições se aplicam:
 - Após o término do período pago, sua conta será convertida para uma conta gratuita (se disponível) ou encerrada;
 - Seu Conteúdo do Usuário será mantido por um período de 30 (trinta) dias após o cancelamento para permitir que você exporte seus dados. Após esse período, os dados podem ser excluídos permanentemente. _[REVISAR-ADV]_
 
-11.6. **Cancelamento pela Tasky Pro**: A Tasky Pro reserva-se o direito de cancelar ou recusar qualquer assinatura a seu exclusivo critério, especialmente em caso de violação destes Termos.
+  11.6. **Cancelamento pela Tasky Pro**: A Tasky Pro reserva-se o direito de cancelar ou recusar qualquer assinatura a seu exclusivo critério, especialmente em caso de violação destes Termos.
 
 ---
 
@@ -246,7 +246,7 @@ Para os fins destes Termos de Uso, as seguintes definições se aplicam:
 - Houver risco à segurança da Plataforma ou de outros usuários;
 - For necessário para manutenção ou atualizações do sistema.
 
-13.2. **Encerramento pela Tasky Pro**: A Tasky Pro pode encerrar sua conta permanentemente se:
+  13.2. **Encerramento pela Tasky Pro**: A Tasky Pro pode encerrar sua conta permanentemente se:
 
 - Você violar repetidamente estes Termos;
 - Você violar qualquer lei ou regulamento aplicável;
@@ -254,16 +254,16 @@ Para os fins destes Termos de Uso, as seguintes definições se aplicam:
 - Você não resolver uma suspensão dentro de um prazo razoável;
 - A Tasky Pro decidir descontinuar o serviço (com aviso prévio razoável).
 
-13.3. **Encerramento pelo Usuário**: Você pode encerrar sua conta a qualquer momento através das configurações da conta ou entrando em contato com nosso suporte.
+  13.3. **Encerramento pelo Usuário**: Você pode encerrar sua conta a qualquer momento através das configurações da conta ou entrando em contato com nosso suporte.
 
-13.4. **Efeitos do Encerramento**: Após o encerramento:
+  13.4. **Efeitos do Encerramento**: Após o encerramento:
 
 - Seu acesso à Plataforma será imediatamente revogado;
 - Você perderá acesso a todo o Conteúdo do Usuário, exceto conforme disposto na Seção 11.5;
 - Todas as licenças e direitos concedidos nestes Termos cessarão imediatamente;
 - A Tasky Pro pode, mas não é obrigada a, excluir permanentemente seu Conteúdo do Usuário após um período de retenção razoável.
 
-13.5. **Sobrevivência**: As Seções 7 (Conteúdo Gerado pelo Usuário), 8 (Propriedade Intelectual), 14 (Limitação de Responsabilidade), 15 (Isenção de Garantias) e 20 (Lei Aplicável e Foro) sobreviverão ao encerramento destes Termos.
+  13.5. **Sobrevivência**: As Seções 7 (Conteúdo Gerado pelo Usuário), 8 (Propriedade Intelectual), 14 (Limitação de Responsabilidade), 15 (Isenção de Garantias) e 20 (Lei Aplicável e Foro) sobreviverão ao encerramento destes Termos.
 
 ---
 
@@ -293,9 +293,9 @@ Para os fins destes Termos de Uso, as seguintes definições se aplicam:
 - Os defeitos serão corrigidos;
 - A Plataforma ou o servidor que a disponibiliza estão livres de vírus ou outros componentes prejudiciais.
 
-15.3. **Risco do Usuário**: Você reconhece que utiliza a Plataforma por sua conta e risco. A Tasky Pro não assume responsabilidade por qualquer perda ou dano resultante do uso ou incapacidade de usar a Plataforma.
+  15.3. **Risco do Usuário**: Você reconhece que utiliza a Plataforma por sua conta e risco. A Tasky Pro não assume responsabilidade por qualquer perda ou dano resultante do uso ou incapacidade de usar a Plataforma.
 
-15.4. **Modificações**: A Tasky Pro reserva-se o direito de modificar, suspender ou descontinuar qualquer aspecto da Plataforma a qualquer momento, com ou sem aviso prévio.
+  15.4. **Modificações**: A Tasky Pro reserva-se o direito de modificar, suspender ou descontinuar qualquer aspecto da Plataforma a qualquer momento, com ou sem aviso prévio.
 
 ---
 
@@ -309,13 +309,13 @@ Para os fins destes Termos de Uso, as seguintes definições se aplicam:
 - Ataques cibernéticos ou outras ameaças à segurança;
 - Força maior ou eventos fora do controle da Tasky Pro.
 
-16.2. **Manutenção**: A Tasky Pro pode realizar manutenção programada com aviso prévio quando possível. Manutenções de emergência podem ser realizadas sem aviso prévio.
+  16.2. **Manutenção**: A Tasky Pro pode realizar manutenção programada com aviso prévio quando possível. Manutenções de emergência podem ser realizadas sem aviso prévio.
 
-16.3. **Sem SLA para Planos Básicos**: Planos básicos não incluem garantias de tempo de atividade (SLA). Planos Enterprise podem incluir SLAs específicos conforme acordado em contrato separado.
+  16.3. **Sem SLA para Planos Básicos**: Planos básicos não incluem garantias de tempo de atividade (SLA). Planos Enterprise podem incluir SLAs específicos conforme acordado em contrato separado.
 
-16.4. **Notificações**: A Tasky Pro pode, mas não é obrigada a, notificar os usuários sobre interrupções planejadas através da Plataforma ou por e-mail.
+  16.4. **Notificações**: A Tasky Pro pode, mas não é obrigada a, notificar os usuários sobre interrupções planejadas através da Plataforma ou por e-mail.
 
-16.5. **Sem Responsabilidade por Indisponibilidade**: A Tasky Pro não será responsável por qualquer perda ou dano resultante da indisponibilidade da Plataforma, exceto conforme exigido por lei aplicável.
+  16.5. **Sem Responsabilidade por Indisponibilidade**: A Tasky Pro não será responsável por qualquer perda ou dano resultante da indisponibilidade da Plataforma, exceto conforme exigido por lei aplicável.
 
 ---
 
@@ -345,14 +345,14 @@ Para os fins destes Termos de Uso, as seguintes definições se aplicam:
 - Conteúdo do Usuário criado na Plataforma;
 - Dados de uso e métricas da Plataforma.
 
-18.4. **Bases Legais**: O processamento de dados pessoais é baseado em:
+  18.4. **Bases Legais**: O processamento de dados pessoais é baseado em:
 
 - Execução de contrato (fornecimento da Plataforma);
 - Consentimento do titular dos dados;
 - Legítimo interesse da Tasky Pro;
 - Cumprimento de obrigações legais.
 
-18.5. **Direitos do Titular**: Conforme a LGPD, você tem direito a:
+  18.5. **Direitos do Titular**: Conforme a LGPD, você tem direito a:
 
 - Confirmar a existência de tratamento de dados;
 - Acessar seus dados;
@@ -363,19 +363,19 @@ Para os fins destes Termos de Uso, as seguintes definições se aplicam:
 - Obter informações sobre compartilhamento de dados;
 - Ser informado sobre a possibilidade de não fornecer consentimento e as consequências.
 
-18.6. **Exercício de Direitos**: Para exercer seus direitos sob a LGPD, entre em contato conosco através do canal indicado na Seção 21 (Canal de Contato).
+  18.6. **Exercício de Direitos**: Para exercer seus direitos sob a LGPD, entre em contato conosco através do canal indicado na Seção 21 (Canal de Contato).
 
-18.7. **Segurança**: A Tasky Pro implementa medidas técnicas e organizacionais apropriadas para proteger seus dados pessoais contra acesso não autorizado, alteração, divulgação ou destruição.
+  18.7. **Segurança**: A Tasky Pro implementa medidas técnicas e organizacionais apropriadas para proteger seus dados pessoais contra acesso não autorizado, alteração, divulgação ou destruição.
 
-18.8. **Retenção de Dados**: A Tasky Pro retém seus dados pessoais apenas pelo tempo necessário para cumprir os propósitos descritos na Política de Privacidade ou conforme exigido por lei.
+  18.8. **Retenção de Dados**: A Tasky Pro retém seus dados pessoais apenas pelo tempo necessário para cumprir os propósitos descritos na Política de Privacidade ou conforme exigido por lei.
 
-18.9. **Compartilhamento**: A Tasky Pro pode compartilhar dados pessoais com:
+  18.9. **Compartilhamento**: A Tasky Pro pode compartilhar dados pessoais com:
 
 - Prestadores de serviços que auxiliam na operação da Plataforma (como Stripe para pagamentos);
 - Autoridades competentes quando exigido por lei;
 - Com seu consentimento ou conforme descrito na Política de Privacidade.
 
-18.10. **Encarregado de Dados (DPO)**: Para questões relacionadas à proteção de dados, você pode entrar em contato com nosso encarregado de dados através do canal indicado na Seção 21.
+  18.10. **Encarregado de Dados (DPO)**: Para questões relacionadas à proteção de dados, você pode entrar em contato com nosso encarregado de dados através do canal indicado na Seção 21.
 
 ---
 
@@ -389,11 +389,11 @@ Para os fins destes Termos de Uso, as seguintes definições se aplicam:
 - Aviso destacado na Plataforma;
 - Ou ambos os métodos acima.
 
-19.3. **Prazo de Notificação**: Alterações materiais serão comunicadas com pelo menos 30 (trinta) dias de antecedência sempre que possível.
+  19.3. **Prazo de Notificação**: Alterações materiais serão comunicadas com pelo menos 30 (trinta) dias de antecedência sempre que possível.
 
-19.4. **Aceitação Continuada**: Seu uso continuado da Plataforma após a entrada em vigor das alterações constitui sua aceitação dos Termos modificados. Se você não concordar com as alterações, deve parar de usar a Plataforma e cancelar sua conta.
+  19.4. **Aceitação Continuada**: Seu uso continuado da Plataforma após a entrada em vigor das alterações constitui sua aceitação dos Termos modificados. Se você não concordar com as alterações, deve parar de usar a Plataforma e cancelar sua conta.
 
-19.5. **Data de Última Atualização**: A data da "Última atualização" no início destes Termos indica quando a versão mais recente entrou em vigor.
+  19.5. **Data de Última Atualização**: A data da "Última atualização" no início destes Termos indica quando a versão mais recente entrou em vigor.
 
 ---
 
@@ -414,16 +414,16 @@ Para os fins destes Termos de Uso, as seguintes definições se aplicam:
 - E-mail: suporte@taskypro.com.br
 - Website: https://app.taskypro.com.br/suporte
 
-21.2. **Questões Jurídicas**: Para questões jurídicas, notificações legais ou exercício de direitos sob a LGPD, entre em contato através de:
+  21.2. **Questões Jurídicas**: Para questões jurídicas, notificações legais ou exercício de direitos sob a LGPD, entre em contato através de:
 
 - E-mail: juridico@taskypro.com.br
 - Endereço: [ENDEREÇO_COMPLETO_EMPRESA] _[REVISAR-ADV]_
 
-21.3. **Encarregado de Dados (DPO)**: Para questões relacionadas à proteção de dados pessoais e exercício de direitos sob a LGPD:
+  21.3. **Encarregado de Dados (DPO)**: Para questões relacionadas à proteção de dados pessoais e exercício de direitos sob a LGPD:
 
 - E-mail: privacidade@taskypro.com.br
 
-21.4. **Tempo de Resposta**: A Tasky Pro se esforça para responder a todas as solicitações dentro de prazos razoáveis, geralmente dentro de 5 (cinco) dias úteis para questões gerais e dentro de 15 (quinze) dias úteis para solicitações relacionadas à LGPD.
+  21.4. **Tempo de Resposta**: A Tasky Pro se esforça para responder a todas as solicitações dentro de prazos razoáveis, geralmente dentro de 5 (cinco) dias úteis para questões gerais e dentro de 15 (quinze) dias úteis para solicitações relacionadas à LGPD.
 
 ---
 

@@ -852,7 +852,6 @@ img {
 .faq-section {
   padding: 5rem 0;
   background: white;
-  border-top: 1px solid #e5e7eb;
 }
 
 .faq-title {
@@ -955,8 +954,8 @@ img {
 .cta-section {
   padding: 5rem 0;
   text-align: center;
-  background: white;
-  color: #000;
+  background: var(--secondary-dark);
+  color: white;
 }
 
 .cta-section h2 {
@@ -970,6 +969,11 @@ img {
   margin: 0 auto 2rem;
   font-size: 1.2rem;
   opacity: 0.9;
+  color: white;
+}
+
+.cta-section h2 {
+  color: white;
 }
 
 /* Footer */

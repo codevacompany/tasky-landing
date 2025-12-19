@@ -53,6 +53,7 @@ E-mail: privacidade@taskypro.com.br
 ### 3.1. Dados Fornecidos por Você
 
 #### Dados de Cadastro e Conta
+
 - Nome completo (primeiro nome e sobrenome)
 - Endereço de e-mail
 - Senha (armazenada com hash criptográfico)
@@ -61,6 +62,7 @@ E-mail: privacidade@taskypro.com.br
 - CNPJ (para empresas)
 
 #### Dados da Empresa/Organização
+
 - Nome da empresa/organização
 - CNPJ
 - Endereço completo (CEP, estado, cidade, bairro, rua, número, complemento)
@@ -69,11 +71,13 @@ E-mail: privacidade@taskypro.com.br
 - Nome e dados de contato do responsável
 
 #### Dados de Pagamento
+
 - Informações de cartão de crédito (processadas pelo Stripe, não armazenadas por nós)
 - Histórico de transações e assinaturas
 - Dados de faturamento
 
 #### Conteúdo Criado por Você
+
 - Tarefas, projetos e listas criadas
 - Comentários e mensagens
 - Arquivos anexados
@@ -82,6 +86,7 @@ E-mail: privacidade@taskypro.com.br
 ### 3.2. Dados Coletados Automaticamente
 
 #### Dados de Uso
+
 - Logs de acesso e atividade
 - Endereço IP
 - Tipo de navegador e versão
@@ -92,6 +97,7 @@ E-mail: privacidade@taskypro.com.br
 - Cookies e tecnologias similares
 
 #### Dados de Desempenho
+
 - Métricas de uso da plataforma
 - Estatísticas de produtividade
 - Relatórios e análises geradas
@@ -119,6 +125,7 @@ Coletamos seus dados pessoais através de:
 Utilizamos seus dados pessoais para as seguintes finalidades:
 
 ### 5.1. Fornecimento do Serviço
+
 - Criar e gerenciar sua conta
 - Processar e gerenciar assinaturas e pagamentos
 - Fornecer acesso à plataforma e suas funcionalidades
@@ -127,24 +134,28 @@ Utilizamos seus dados pessoais para as seguintes finalidades:
 - Enviar notificações sobre atividades na plataforma
 
 ### 5.2. Melhoria do Serviço
+
 - Analisar uso da plataforma para melhorar funcionalidades
 - Desenvolver novos recursos e funcionalidades
 - Realizar pesquisas e análises de uso
 - Personalizar sua experiência na plataforma
 
 ### 5.3. Comunicação
+
 - Enviar comunicações sobre sua conta e serviços
 - Responder a suas solicitações e dúvidas
 - Enviar atualizações sobre a plataforma
 - Enviar comunicações de marketing (com seu consentimento)
 
 ### 5.4. Segurança e Conformidade
+
 - Prevenir fraudes e atividades ilegais
 - Garantir segurança da plataforma e dos usuários
 - Cumprir obrigações legais e regulatórias
 - Resolver disputas e fazer cumprir nossos termos
 
 ### 5.5. Suporte ao Cliente
+
 - Fornecer suporte técnico
 - Resolver problemas e questões
 - Processar solicitações de direitos do titular
@@ -156,22 +167,26 @@ Utilizamos seus dados pessoais para as seguintes finalidades:
 O tratamento de seus dados pessoais é baseado nas seguintes bases legais previstas na LGPD:
 
 ### 6.1. Execução de Contrato (Art. 7º, V)
+
 - Fornecimento do serviço contratado
 - Processamento de pagamentos
 - Gestão de assinaturas
 
 ### 6.2. Consentimento (Art. 7º, I)
+
 - Comunicações de marketing
 - Uso de cookies não essenciais
 - Dados opcionais fornecidos
 
 ### 6.3. Legítimo Interesse (Art. 7º, IX)
+
 - Melhoria do serviço
 - Prevenção de fraudes
 - Análise de uso da plataforma
 - Segurança e proteção de direitos
 
 ### 6.4. Cumprimento de Obrigação Legal (Art. 7º, II)
+
 - Retenção de dados fiscais
 - Cumprimento de ordens judiciais
 - Notificações à ANPD em caso de violação
@@ -194,6 +209,7 @@ Todos os prestadores de serviço são contratualmente obrigados a proteger seus 
 ### 7.2. Autoridades Competentes
 
 Podemos compartilhar dados quando exigido por lei ou ordem judicial, incluindo:
+
 - Autoridades fiscais
 - Órgãos reguladores
 - Autoridades policiais (com ordem judicial)
@@ -228,6 +244,7 @@ Alguns de nossos prestadores de serviço podem estar localizados fora do Brasil.
 Implementamos medidas técnicas e organizacionais apropriadas para proteger seus dados pessoais:
 
 ### 9.1. Medidas Técnicas
+
 - **Criptografia em trânsito**: SSL/TLS para todas as comunicações
 - **Criptografia em repouso**: Dados sensíveis criptografados no banco de dados
 - **Senhas**: Armazenadas com hash criptográfico (bcrypt/argon2)
@@ -236,6 +253,7 @@ Implementamos medidas técnicas e organizacionais apropriadas para proteger seus
 - **Monitoramento**: Monitoramento contínuo de segurança
 
 ### 9.2. Medidas Organizacionais
+
 - Acesso restrito apenas a pessoal autorizado
 - Treinamento da equipe sobre proteção de dados
 - Políticas internas de segurança
@@ -275,28 +293,36 @@ Após o período de retenção, seus dados serão excluídos permanentemente ou 
 Conforme a LGPD, você tem os seguintes direitos sobre seus dados pessoais:
 
 ### 11.1. Confirmação e Acesso
+
 - Confirmar se tratamos seus dados pessoais
 - Acessar seus dados pessoais
 
 ### 11.2. Correção
+
 - Corrigir dados incompletos, inexatos ou desatualizados
 
 ### 11.3. Anonimização, Bloqueio ou Eliminação
+
 - Solicitar anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD
 
 ### 11.4. Portabilidade
+
 - Solicitar portabilidade dos dados para outro fornecedor de serviço
 
 ### 11.5. Eliminação
+
 - Solicitar eliminação dos dados tratados com base em consentimento
 
 ### 11.6. Informações sobre Compartilhamento
+
 - Obter informações sobre entidades públicas e privadas com as quais compartilhamos dados
 
 ### 11.7. Revogação de Consentimento
+
 - Revogar consentimento a qualquer momento
 
 ### 11.8. Revisão de Decisões Automatizadas
+
 - Solicitar revisão de decisões tomadas unicamente com base em tratamento automatizado de dados
 
 ---
@@ -333,18 +359,22 @@ Cookies são pequenos arquivos de texto armazenados em seu dispositivo quando vo
 ### 13.2. Tipos de Cookies Utilizados
 
 #### Cookies Essenciais
+
 - Necessários para funcionamento da plataforma
 - Não podem ser desativados
 
 #### Cookies de Funcionalidade
+
 - Melhoram funcionalidades da plataforma
 - Podem ser desativados
 
 #### Cookies de Análise
+
 - Coletam informações sobre uso da plataforma
 - Podem ser desativados
 
 #### Cookies de Marketing
+
 - Usados para personalizar anúncios
 - Requerem consentimento
 
@@ -371,6 +401,7 @@ Podemos atualizar esta Política de Privacidade periodicamente para refletir mud
 ### 15.2. Notificação de Alterações
 
 Alterações materiais serão comunicadas através de:
+
 - Notificação por e-mail para o endereço associado à sua conta
 - Aviso destacado na plataforma
 - Data de "Última atualização" no início desta Política
@@ -386,6 +417,7 @@ Seu uso continuado da plataforma após alterações constitui aceitação da Pol
 ### 16.1. Designação
 
 A Tasky Pro designou um Encarregado de Dados (DPO) responsável por:
+
 - Receber comunicações dos titulares
 - Receber comunicações da ANPD
 - Orientar funcionários sobre práticas de proteção de dados
@@ -426,4 +458,3 @@ Se você tiver dúvidas sobre esta Política ou sobre como tratamos seus dados p
 ---
 
 _[REVISAR-ADV] = Esta seção requer revisão por advogado antes da publicação final._
-
