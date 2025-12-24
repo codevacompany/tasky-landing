@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Descubra todos os recursos do Tasky Pro. Ferramentas desenhadas para a realidade do empreendedor brasileiro.">
+    <title>Recursos • Tasky Pro</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <style>
+        /* Recursos Page Specific Styles */
+        .recursos-header-content {
+            padding: 60px 0 80px;
+            text-align: center;
+        }
+
+        .recursos-header-content h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .recursos-header-content p {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .recursos-section {
+            padding: 100px 0;
+            background: #fff;
+        }
+
+        .recursos-section:nth-child(odd) {
+            background: #f8fafc;
+        }
+
+        .recurso-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .recurso-row.reverse {
+            direction: rtl;
+        }
+
+        .recurso-row.reverse>* {
+            direction: ltr;
+        }
+
+        .recurso-image img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .recurso-content {
+            padding: 20px 0;
+        }
+
+        .recurso-tag {
+            display: inline-block;
+            background: rgba(22, 208, 137, 0.12);
+            color: #16d089;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 1.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .recurso-content h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #111827;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .recurso-content p {
+            font-size: 1.05rem;
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .recurso-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .recurso-checklist li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #374151;
+            font-weight: 500;
+        }
+
+        .recurso-checklist li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #16d089;
+            font-weight: 800;
+        }
+
+        .recursos-cta {
+            padding: 100px 0;
+            background: linear-gradient(180deg, #000c24 0%, #0a1628 100%);
+            text-align: center;
+        }
+
+        .recursos-cta h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .recursos-cta p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .recursos-cta .btn {
+            padding: 16px 40px;
+            font-size: 1rem;
+        }
+
+        .recursos-cta .cta-note {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* More Features Grid */
+        .more-features-section {
+            padding: 80px 0;
+            background: #0a1628;
+        }
+
+        .more-features-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .more-features-header h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 0.75rem;
+        }
+
+        .more-features-header p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1rem;
+        }
+
+        .more-features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .more-feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .more-feature-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .more-feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .more-feature-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .more-feature-card p {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .recursos-header {
+                padding: 120px 24px 60px;
+            }
+
+            .recursos-header h1 {
+                font-size: 2rem;
+            }
+
+            .recurso-row {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .recurso-row.reverse {
+                direction: ltr;
+            }
+
+            .recurso-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .recursos-section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="landing-page">
+        <!-- Hero Section (com navbar) -->
+        <header class="hero-section">
+            <nav class="navbar">
+                <div class="menu">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/tasky-pro-white.png" alt="Tasky Logo" />
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="nav-links" id="navLinks">
+                        <a href="index.html">Inicio</a>
+                        <a href="recursos.html" class="active-link">Recursos</a>
+                        <a href="precos.html">Planos</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="https://app.taskypro.com.br/login" class="login-btn">Entrar</a>
+                    <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-primary hero-button btn-pulse">COMECE
+                        AGORA</a>
+                </div>
+            </nav>
+
+            <!-- Header da Página -->
+            <div class="recursos-header-content reveal">
+                <div class="container">
+                    <h1>Explore <span class="gradient-text">todos os recursos</span></h1>
+                    <p>Muito além do básico: ferramentas completas para você escalar sua operação com confiança.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Recurso 1: Automações -->
+        <section class="recursos-section">
+            <div class="recurso-row reveal">
+                <div class="recurso-image">
+                    <img src="C:/Users/isaac/.gemini/antigravity/brain/676aa80f-33b9-4e4b-ab17-cbb4322c427d/recursos_automacao_tempo_brasil_1766615120512.png"
+                        alt="Automação liberando tempo" />
+                </div>
+                <div class="recurso-content">
+                    <span class="recurso-tag">Automações</span>
+                    <h2>Ganhe horas do seu dia automatizando o operacional.</h2>
+                    <p>Configure regras que movem tarefas, notificam pessoas e atualizam status automaticamente. Menos
+                        cliques,
+                        mais resultados.</p>
+                    <ul class="recurso-checklist">
+                        <li>Criação automática de tarefas recorrentes</li>
+                        <li>Notificações por prazo e status</li>
+                        <li>Movimentação automática entre etapas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recurso 2: App Mobile -->
+        <section class="recursos-section">
+            <div class="recurso-row reverse reveal">
+                <div class="recurso-image">
+                    <img src="C:/Users/isaac/.gemini/antigravity/brain/676aa80f-33b9-4e4b-ab17-cbb4322c427d/recursos_mobile_app_brasil_1766615073662.png"
+                        alt="Gestão mobile" />
+                </div>
+                <div class="recurso-content">
+                    <span class="recurso-tag">App Mobile</span>
+                    <h2>Gerencie sua equipe de qualquer lugar.</h2>
+                    <p>Acesse suas tarefas, aprove demandas e acompanhe o progresso diretamente do celular. Ideal para
+                        gestores
+                        que estão sempre em movimento.</p>
+                    <ul class="recurso-checklist">
+                        <li>App disponível para iOS e Android</li>
+                        <li>Notificações push em tempo real</li>
+                        <li>Interface otimizada para toque</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recurso 3: Permissões e Equipes -->
+        <section class="recursos-section">
+            <div class="recurso-row reveal">
+                <div class="recurso-image">
+                    <img src="C:/Users/isaac/.gemini/antigravity/brain/676aa80f-33b9-4e4b-ab17-cbb4322c427d/recursos_permissoes_equipe_brasil_1766615087406.png"
+                        alt="Estrutura de equipes" />
+                </div>
+                <div class="recurso-content">
+                    <span class="recurso-tag">Equipes & Permissões</span>
+                    <h2>Controle total sobre quem vê e faz o quê.</h2>
+                    <p>Organize sua empresa em setores e defina níveis de acesso. Supervisores veem tudo do time,
+                        colaboradores
+                        focam no seu próprio trabalho.</p>
+                    <ul class="recurso-checklist">
+                        <li>Setores com visibilidade separada</li>
+                        <li>Níveis: Admin, Supervisor, Colaborador</li>
+                        <li>Controle granular de permissões</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recurso 4: Comunicação (já na home, mas detalhado) -->
+        <section class="recursos-section">
+            <div class="recurso-row reverse reveal">
+                <div class="recurso-image">
+                    <img src="C:/Users/isaac/.gemini/antigravity/brain/676aa80f-33b9-4e4b-ab17-cbb4322c427d/recursos_comunicacao_equipe_sucesso_brasil_1766614064556.png"
+                        alt="Comunicação de sucesso" />
+                </div>
+                <div class="recurso-content">
+                    <span class="recurso-tag">Comunicação Integrada</span>
+                    <h2>Toda a conversa no contexto certo.</h2>
+                    <p>Chega de informações perdidas no WhatsApp. Comentários, arquivos e decisões ficam anexados à
+                        tarefa para
+                        sempre.</p>
+                    <ul class="recurso-checklist">
+                        <li>Chat dentro de cada tarefa</li>
+                        <li>Histórico completo e buscável</li>
+                        <li>Anexos de arquivos ilimitados</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recurso 5: Dashboards (já na home, mas detalhado) -->
+        <section class="recursos-section">
+            <div class="recurso-row reveal">
+                <div class="recurso-image">
+                    <img src="C:/Users/isaac/.gemini/antigravity/brain/676aa80f-33b9-4e4b-ab17-cbb4322c427d/recursos_dashboard_analise_foco_1766614051101.png"
+                        alt="Análise de dados estratégica" />
+                </div>
+                <div class="recurso-content">
+                    <span class="recurso-tag">Dashboards & Relatórios</span>
+                    <h2>Visão completa em tempo real.</h2>
+                    <p>Acompanhe a produtividade de cada colaborador, setor e projeto. Identifique gargalos antes que
+                        virem
+                        problemas.</p>
+                    <ul class="recurso-checklist">
+                        <li>Métricas de produtividade individual</li>
+                        <li>Relatórios por período e setor</li>
+                        <li>Exportação para PDF e Excel</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Features Grid -->
+        <section class="more-features-section">
+            <div class="container">
+                <div class="more-features-header reveal">
+                    <h2>E muito mais...</h2>
+                    <p>Funcionalidades que fazem a diferença no dia a dia</p>
+                </div>
+                <div class="more-features-grid">
+                    <div class="more-feature-card reveal">
+                        <div class="more-feature-icon">🔔</div>
+                        <h3>Notificações Inteligentes</h3>
+                        <p>Alertas por e-mail, push e in-app para nunca perder um prazo importante.</p>
+                    </div>
+                    <div class="more-feature-card reveal delay-1">
+                        <div class="more-feature-icon">📎</div>
+                        <h3>Anexos e Documentos</h3>
+                        <p>Centralize contratos, briefs e arquivos dentro de cada tarefa.</p>
+                    </div>
+                    <div class="more-feature-card reveal delay-2">
+                        <div class="more-feature-icon">🔄</div>
+                        <h3>Tarefas Recorrentes</h3>
+                        <p>Automatize demandas que se repetem toda semana ou mês.</p>
+                    </div>
+                    <div class="more-feature-card reveal delay-3">
+                        <div class="more-feature-icon">🏷️</div>
+                        <h3>Etiquetas e Filtros</h3>
+                        <p>Organize e encontre qualquer tarefa em segundos com tags personalizadas.</p>
+                    </div>
+                    <div class="more-feature-card reveal delay-4">
+                        <div class="more-feature-icon">📅</div>
+                        <h3>Calendário Integrado</h3>
+                        <p>Visualize prazos em um calendário e planeje a semana da equipe.</p>
+                    </div>
+                    <div class="more-feature-card reveal delay-5">
+                        <div class="more-feature-icon">🔒</div>
+                        <h3>Segurança Empresarial</h3>
+                        <p>Dados criptografados, backups automáticos e conformidade com LGPD.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="recursos-cta">
+            <div class="container reveal">
+                <h2>Transforme sua empresa<br><span class="gradient-text">ainda hoje.</span></h2>
+                <p>14 dias grátis. Sem compromisso.</p>
+                <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-white btn-pulse">QUERO COMEÇAR AGORA</a>
+                <p class="cta-note">Sem cartão de crédito • Acesso completo</p>
+            </div>
+        </section>
+
+        <!-- Footer (Padrão do Site) -->
+        <footer class="site-footer">
+            <div class="container footer-content simplified-footer">
+                <div class="footer-left">
+                    <div class="footer-logo-icons">
+                        <img src="assets/images/tasky-pro-white.png" alt="Tasky Logo" class="footer-logo" />
+                        <div class="social-icons">
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/landing/youtube.svg" alt="Youtube Logo" />
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/landing/linkedin.svg" alt="Linkedin Logo" />
+                            </a>
+                            <a href="https://www.instagram.com/taskyproapp" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/images/landing/instagram.svg" alt="Instagram Logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Política de privacidade</a>
+                        <a href="#">Termos de serviço</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p>© Tasky Pro • Todos os direitos reservados</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+        const navLinks = document.getElementById("navLinks");
+        const authLinks = document.getElementById("authLinks");
+        const navbar = document.querySelector(".navbar");
+        const body = document.body;
+
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener("click", function () {
+                navbar.classList.toggle("menu-open");
+                mobileMenuToggle.classList.toggle("active");
+                body.classList.toggle("menu-open");
+            });
+
+            if (navLinks) {
+                const navLinksList = navLinks.querySelectorAll("a");
+                navLinksList.forEach((link) => {
+                    link.addEventListener("click", function () {
+                        navbar.classList.remove("menu-open");
+                        mobileMenuToggle.classList.remove("active");
+                        body.classList.remove("menu-open");
+                    });
+                });
+            }
+        }
+    </script>
+    <script src="animations.js"></script>
+</body>
+
+</html>

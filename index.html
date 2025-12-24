@@ -1,723 +1,796 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Sistema inteligente de gestão de tarefas e comunicação empresarial. Aumente a produtividade, simplifique a comunicação e organize sua equipe."
-    />
-    <meta
-      name="keywords"
-      content="gestão de tarefas, produtividade, comunicação empresarial, gestão de projetos, task management"
-    />
-    <meta name="author" content="Tasky Pro" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicons/favicon-16x16.png"
-    />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sistema inteligente de gestão de tarefas e comunicação empresarial. Aumente a produtividade, simplifique a comunicação e organize sua equipe." />
+  <meta name="keywords"
+    content="gestão de tarefas, produtividade, comunicação empresarial, gestão de projetos, task management" />
+  <meta name="author" content="Tasky Pro" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tasky-system.vercel.app/" />
-    <meta
-      property="og:title"
-      content="Tasky Pro - Gestão Inteligente de Tarefas"
-    />
-    <meta
-      property="og:description"
-      content="Sistema inteligente de gestão de tarefas e comunicação empresarial. Aumente a produtividade, simplifique a comunicação e organize sua equipe."
-    />
-    <meta
-      property="og:image"
-      content="https://tasky-system.vercel.app/assets/images/landing/hero-image-overview.png"
-    />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://tasky-system.vercel.app/" />
-    <meta
-      property="twitter:title"
-      content="Tasky Pro - Gestão Inteligente de Tarefas"
-    />
-    <meta
-      property="twitter:description"
-      content="Sistema inteligente de gestão de tarefas e comunicação empresarial. Aumente a produtividade, simplifique a comunicação e organize sua equipe."
-    />
-    <meta
-      property="twitter:image"
-      content="https://tasky-system.vercel.app/assets/images/landing/hero-image-overview.png"
-    />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tasky-system.vercel.app/" />
+  <meta property="og:title" content="Tasky Pro - Gestão Inteligente de Tarefas" />
+  <meta property="og:description"
+    content="Sistema inteligente de gestão de tarefas e comunicação empresarial. Aumente a produtividade, simplifique a comunicação e organize sua equipe." />
+  <meta property="og:image" content="https://tasky-system.vercel.app/assets/images/landing/hero-image-overview.png" />
 
-    <title>
-      Tasky Pro - Gestão Inteligente de Tarefas e Comunicação Empresarial
-    </title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="landing-page">
-      <!-- Hero Section -->
-      <header class="hero-section">
-        <nav class="navbar">
-          <div class="menu">
-            <div class="logo">
-              <img src="assets/images/tasky-pro-white.png" alt="Tasky Logo" />
-            </div>
-            <button
-              class="mobile-menu-toggle"
-              aria-label="Toggle menu"
-              id="mobileMenuToggle"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <div class="nav-links" id="navLinks">
-              <a href="#product-details">Produto</a>
-              <a href="precos.html">Preços</a>
-            </div>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://tasky-system.vercel.app/" />
+  <meta property="twitter:title" content="Tasky Pro - Gestão Inteligente de Tarefas" />
+  <meta property="twitter:description"
+    content="Sistema inteligente de gestão de tarefas e comunicação empresarial. Aumente a produtividade, simplifique a comunicação e organize sua equipe." />
+  <meta property="twitter:image"
+    content="https://tasky-system.vercel.app/assets/images/landing/hero-image-overview.png" />
+
+  <title>
+    Tasky Pro - Gestão Inteligente de Tarefas e Comunicação Empresarial
+  </title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="landing-page">
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <nav class="navbar">
+        <div class="menu">
+          <div class="logo">
+            <img src="assets/images/tasky-pro-white.png" alt="Tasky Logo" />
           </div>
-          <div class="auth-links" id="authLinks">
-            <a href="https://app.taskypro.com.br/login" class="login-btn"
-              >Entrar</a
-            >
-            <a
-              href="https://app.taskypro.com.br/cadastrar"
-              class="btn btn-primary hero-button"
-              >COMECE GRÁTIS</a
-            >
-          </div>
-        </nav>
-
-        <div class="hero-content">
-          <div class="hero-text">
-            <h1>
-              Organização real para equipes que precisam entregar resultados.
-            </h1>
-            <p class="subtitle">
-              Pare de perder tarefas, prazos e clientes. Organize sua operação
-              em um só lugar.
-            </p>
-            <div class="hero-buttons">
-              <a
-                href="https://app.taskypro.com.br/cadastrar"
-                class="btn btn-primary hero-button"
-                >COMECE GRÁTIS</a
-              >
-            </div>
-          </div>
-          <div class="hero-image">
-            <img
-              src="assets/images/landing/hero-image-overview.png"
-              alt="Tasky Dashboard"
-            />
+          <button class="mobile-menu-toggle" aria-label="Toggle menu" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links" id="navLinks">
+            <a href="index.html">Inicio</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="precos.html">Planos</a>
           </div>
         </div>
-      </header>
-
-      <!-- Product Description -->
-      <section class="about-section">
-        <div class="container">
-          <div class="about-content">
-            <h2>
-              Ganhe visibilidade total sobre o trabalho da sua Equipe. Integre
-              Gestão, Comunicação e Fluxo de Trabalho em uma única plataforma.
-            </h2>
-          </div>
+        <div class="auth-links" id="authLinks">
+          <a href="https://app.taskypro.com.br/login" class="login-btn">Entrar</a>
+          <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-primary hero-button btn-pulse">COMECE AGORA</a>
         </div>
-      </section>
+      </nav>
 
-      <!-- Features Detail Sections -->
-      <section class="feature-detail-section" id="product-details">
-        <div class="container">
-          <div class="feature-detail">
-            <div class="feature-detail-content">
-              <h2>Fluxo de Trabalho Visual e Intuitivo</h2>
-              <p class="feature-description">
-                Visualize o fluxo de trabalho da sua empresa em um painel
-                intuitivo. Crie tarefas, defina responsáveis e acompanhe o
-                progresso em tempo real. O sistema obriga a definição de prazos
-                e responsáveis.
-              </p>
-            </div>
-            <div class="feature-detail-image">
-              <img
-                src="assets/gifs/gestao-de-tarefas.gif"
-                alt="Gestão de tarefas"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="feature-detail-section bg-light">
-        <div class="container">
-          <div class="feature-detail reverse">
-            <div class="feature-detail-content">
-              <h2>Comunicação Centralizada e Segura</h2>
-              <p class="feature-description">
-                Centralize todos os pedidos, arquivos e conversas dentro da
-                própria tarefa, permitindo que múltiplos usuários colaborem no
-                mesmo espaço em tempo real.
-              </p>
-            </div>
-            <div class="feature-detail-image">
-              <img
-                src="assets/gifs/colaboracao.gif"
-                alt="Fluxo Multi-Setores"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="feature-detail-section">
-        <div class="container">
-          <div class="feature-detail">
-            <div class="feature-detail-content">
-              <h2>Controle de Qualidade</h2>
-              <p class="feature-description">
-                Nada é finalizado sem uma verificação. O colaborador entrega,
-                alguém confere e aprova. Garanta a excelência antes de dar como
-                feito.
-              </p>
-            </div>
-            <div class="feature-detail-image">
-              <img
-                src="assets/gifs/verificacao.gif"
-                alt="Fluxo de Verificação e Aprovação"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="feature-detail-section bg-light">
-        <div class="container">
-          <div class="feature-detail reverse">
-            <div class="feature-detail-content">
-              <h2>Gestão Baseada em Dados</h2>
-              <p class="feature-description">
-                Saiba quem são seus melhores colaboradores e onde estão os
-                gargalos. Tome decisões com base em relatórios, não em
-                'achismo'.
-              </p>
-            </div>
-            <div class="feature-detail-image">
-              <img
-                src="assets/gifs/metricas.gif"
-                alt="Métricas e produtividade"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Call to Action -->
-      <section class="cta-section" id="contact">
-        <div class="container">
-          <h2>Pronto para organizar sua empresa e acelerar seu crescimento?</h2>
-          <p>
-            Comece a gerenciar com dados e tenha o controle total do seu
-            negócio.
+      <div class="hero-content hero-content-modern">
+        <div class="hero-text-center reveal">
+          <h1 class="hero-title-xl">
+            Tenha sua equipe<br>organizada em <span class="gradient-text">24 horas</span>
+          </h1>
+          <p class="hero-subtitle-lg">
+            Gestão inteligente com dados em um só lugar.<br>
+            Nada fica sem dono. Nada fica sem prazo.
           </p>
-          <a
-            href="https://app.taskypro.com.br/cadastrar"
-            class="btn btn-primary hero-button"
-            >COMECE GRÁTIS</a
-          >
+          <div class="hero-cta-group">
+            <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-primary btn-xl btn-pulse">
+              QUERO COMEÇAR AGORA
+            </a>
+            <p class="cta-subtext-modern">
+              <span class="check-icon">✓</span> 14 dias grátis
+              <span class="check-icon">✓</span> Sem cartão
+              <span class="check-icon">✓</span> Cancele quando quiser
+            </p>
+          </div>
         </div>
-      </section>
 
-      <!-- FAQ Section -->
-      <section class="faq-section">
-        <div class="container">
-          <h2 class="faq-title">Perguntas frequentes</h2>
-          <div class="faq-list">
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                <span>Há uma versão grátis do Tasky Pro?</span>
-                <svg
-                  class="faq-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  Sim! Oferecemos um período de teste gratuito para que você
-                  possa experimentar todas as funcionalidades da plataforma.
-                  Após o período de teste, você pode escolher o plano que melhor
-                  se adequa às necessidades da sua empresa.
-                </p>
+        <div class="hero-image-modern reveal delay-2">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/landing/hero-image-overview.png" alt="Tasky Dashboard" class="hero-screenshot" />
+            <div class="floating-badge badge-top-right glass">
+              <span class="badge-icon">📊</span>
+              <span>Analytics em tempo real</span>
+            </div>
+            <div class="floating-badge badge-bottom-left glass">
+              <span class="badge-icon">👥</span>
+              <span>Multi-equipes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Social Proof - Metrics -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid metrics-simple">
+          <div class="metric-item-simple reveal delay-1">
+            <span class="metric-icon">🏢</span>
+            <span class="metric-value" data-count="50" data-prefix="+">+50</span>
+            <span class="metric-label">Empresas ativas</span>
+          </div>
+          <div class="metric-item-simple reveal delay-2">
+            <span class="metric-icon">✅</span>
+            <span class="metric-value" data-count="10000" data-prefix="+">+10.000</span>
+            <span class="metric-label">Tarefas gerenciadas</span>
+          </div>
+          <div class="metric-item-simple reveal delay-3">
+            <span class="metric-icon">⏱️</span>
+            <span class="metric-value" data-count="2500" data-prefix="+" data-suffix="h">+2.500h</span>
+            <span class="metric-label">Horas economizadas</span>
+          </div>
+          <div class="metric-item-simple reveal delay-4">
+            <span class="metric-icon">⭐</span>
+            <span class="metric-value">4.9/5</span>
+            <span class="metric-label">Avaliação média</span>
+          </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="target-audience-section">
+      <div class="container">
+        <h2 class="section-title reveal">Empresas de todos os tamanhos<br>já organizam suas equipes com o Tasky Pro</h2>
+        <p class="section-subtitle reveal delay-1">Diversos segmentos já transformaram sua operação</p>
+        <div class="audience-grid">
+          <div class="audience-card reveal delay-1 tilt-card hover-lift">
+            <span class="audience-icon">📣</span>
+            <h3>Agências de Marketing</h3>
+          </div>
+          <div class="audience-card reveal delay-2 tilt-card hover-lift">
+            <span class="audience-icon">💼</span>
+            <h3>Consultorias e Serviços</h3>
+          </div>
+          <div class="audience-card reveal delay-3 tilt-card hover-lift">
+            <span class="audience-icon">🔧</span>
+            <h3>Prestadores de Serviços</h3>
+          </div>
+          <div class="audience-card reveal delay-4 tilt-card hover-lift">
+            <span class="audience-icon">🏠</span>
+            <h3>Imobiliárias</h3>
+          </div>
+          <div class="audience-card reveal delay-5 tilt-card hover-lift">
+            <span class="audience-icon">🏥</span>
+            <h3>Clínicas e Saúde</h3>
+          </div>
+          <div class="audience-card reveal delay-6 tilt-card hover-lift">
+            <span class="audience-icon">🏪</span>
+            <h3>Comércio e Lojas</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Intro -->
+    <section class="features-intro-section">
+      <div class="container">
+        <h2 class="section-title reveal">Conheça as funcionalidades<br>que vão transformar sua gestão</h2>
+        <p class="section-subtitle reveal delay-1">Ferramentas pensadas para simplificar o dia a dia da sua equipe</p>
+      </div>
+    </section>
+
+    <section class="feature-detail-section" id="product-details">
+      <div class="container">
+        <div class="feature-detail">
+          <div class="feature-detail-content">
+            <h2>Fluxo de Trabalho Visual e Intuitivo</h2>
+            <p class="feature-description">
+              Visualize o fluxo de trabalho da sua empresa em um painel
+              intuitivo. Crie tarefas, defina responsáveis e acompanhe o
+              progresso em tempo real. O sistema obriga a definição de prazos
+              e responsáveis.
+            </p>
+          </div>
+          <div class="feature-detail-image">
+            <img src="assets/gifs/gestao-de-tarefas.gif" alt="Gestão de tarefas" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail-section bg-light">
+      <div class="container">
+        <div class="feature-detail reverse">
+          <div class="feature-detail-content">
+            <h2>Comunicação Centralizada e Segura</h2>
+            <p class="feature-description">
+              Centralize todos os pedidos, arquivos e conversas dentro da
+              própria tarefa, permitindo que múltiplos usuários colaborem no
+              mesmo espaço em tempo real.
+            </p>
+          </div>
+          <div class="feature-detail-image">
+            <img src="assets/gifs/colaboracao.gif" alt="Fluxo Multi-Setores" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail-section">
+      <div class="container">
+        <div class="feature-detail">
+          <div class="feature-detail-content">
+            <h2>Controle de Qualidade</h2>
+            <p class="feature-description">
+              Nada é finalizado sem uma verificação. O colaborador entrega,
+              alguém confere e aprova. Garanta a excelência antes de dar como
+              feito.
+            </p>
+          </div>
+          <div class="feature-detail-image">
+            <img src="assets/gifs/verificacao.gif" alt="Fluxo de Verificação e Aprovação" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-detail-section bg-light">
+      <div class="container">
+        <div class="feature-detail reverse">
+          <div class="feature-detail-content">
+            <h2>Gestão Baseada em Dados</h2>
+            <p class="feature-description">
+              Saiba quem são seus melhores colaboradores e onde estão os
+              gargalos. Tome decisões com base em relatórios, não em
+              'achismo'.
+            </p>
+          </div>
+          <div class="feature-detail-image">
+            <img src="assets/gifs/metricas.gif" alt="Métricas e produtividade" />
+          </div>
+        </div>
+    </section>
+
+    <!-- Social Proof - Testimonials -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="testimonials-header reveal">
+          <h2>O que nossos clientes dizem</h2>
+          <p>Veja como empresas reais transformaram sua operação</p>
+        </div>
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card reveal delay-1 hover-lift">
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">
+              Antes do Tasky Pro, tínhamos tarefas soltas em grupos de WhatsApp e ninguém sabia o deadline real. Em 2
+              semanas, nossa equipe parou de perder prazos.
+            </p>
+            <div class="testimonial-author">
+              <img src="assets/images/testimonials/marina.png" alt="Marina Costa" class="testimonial-avatar" />
+              <div class="testimonial-info">
+                <span class="testimonial-name">Marina Costa</span>
+                <span class="testimonial-role">Sócia-Diretora</span>
+                <span class="testimonial-company">Impulso Digital</span>
               </div>
             </div>
+          </div>
 
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                <span>Quanto custa o Tasky Pro?</span>
-                <svg
-                  class="faq-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  Nossos planos são flexíveis e baseados no número de usuários e
-                  funcionalidades necessárias. Visite nossa página de preços
-                  para ver todos os planos disponíveis e escolher o que melhor
-                  se adequa ao seu negócio.
-                </p>
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card reveal delay-2 hover-lift">
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="testimonial-text">
+              O controle de verificação mudou tudo. Agora nenhuma declaração sai sem conferência. Nossos erros caíram
+              80% no primeiro mês.
+            </p>
+            <div class="testimonial-author">
+              <img src="assets/images/testimonials/ricardo.png" alt="Ricardo Almeida" class="testimonial-avatar" />
+              <div class="testimonial-info">
+                <span class="testimonial-name">Ricardo Almeida</span>
+                <span class="testimonial-role">Gerente de Operações</span>
+                <span class="testimonial-company">Nexus Contábil</span>
               </div>
             </div>
+          </div>
 
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                <span>Posso pagar mensalmente?</span>
-                <svg
-                  class="faq-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  Sim! Oferecemos opções de pagamento mensal e anual. O plano
-                  anual oferece desconto em relação ao pagamento mensal.
-                </p>
-              </div>
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card reveal delay-3 hover-lift">
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
             </div>
-
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                <span>Qual plano é adequado para mim?</span>
-                <svg
-                  class="faq-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  A escolha do plano depende do tamanho da sua equipe e das
-                  funcionalidades que você precisa. Nossa página de preços
-                  oferece uma comparação detalhada de cada plano para ajudá-lo a
-                  tomar a melhor decisão.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                <span>Como funciona o controle de qualidade?</span>
-                <svg
-                  class="faq-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  O sistema possui um fluxo de verificação integrado. Quando uma
-                  tarefa é concluída, ela pode ser enviada para verificação por
-                  um revisor designado. Apenas após a aprovação, a tarefa é
-                  marcada como finalizada, garantindo qualidade em todas as
-                  entregas.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                <span>Como funciona o cancelamento?</span>
-                <svg
-                  class="faq-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  Você pode cancelar sua assinatura a qualquer momento. Não há
-                  taxas de cancelamento e você terá acesso até o final do
-                  período pago.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                <span>O Tasky Pro é seguro?</span>
-                <svg
-                  class="faq-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  Sim! A segurança dos seus dados é nossa prioridade. Utilizamos
-                  criptografia SSL/TLS, backups regulares e seguimos as melhores
-                  práticas de segurança da informação. Seus dados estão
-                  protegidos e você tem controle sobre suas informações: pode
-                  acessar, corrigir, exportar ou solicitar a exclusão dos seus
-                  dados a qualquer momento, conforme seus direitos garantidos
-                  pela LGPD.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                <span>Posso alterar meu plano depois?</span>
-                <svg
-                  class="faq-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  Sim! Você pode fazer upgrade ou downgrade do seu plano a
-                  qualquer momento. As alterações serão aplicadas no próximo
-                  ciclo de cobrança.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                <span>Quais métodos de pagamento vocês aceitam?</span>
-                <svg
-                  class="faq-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  Aceitamos cartões de crédito das principais bandeiras. Todos
-                  os pagamentos são processados de forma segura através de
-                  nossos parceiros de pagamento.
-                </p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                <span>Como faço para começar?</span>
-                <svg
-                  class="faq-icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>
-                  É muito simples! Basta clicar em "COMECE GRÁTIS" e criar sua
-                  conta. Você terá acesso imediato à plataforma e poderá começar
-                  a organizar suas tarefas e equipe em minutos. Não é necessário
-                  cartão de crédito para começar.
-                </p>
+            <p class="testimonial-text">
+              Finalmente um sistema que minha equipe criativa realmente usa. As métricas me mostram exatamente onde
+              estão os gargalos.
+            </p>
+            <div class="testimonial-author">
+              <img src="assets/images/testimonials/fernanda.png" alt="Fernanda Oliveira" class="testimonial-avatar" />
+              <div class="testimonial-info">
+                <span class="testimonial-name">Fernanda Oliveira</span>
+                <span class="testimonial-role">Produtora Executiva</span>
+                <span class="testimonial-company">Frame Studio</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Footer -->
-      <footer class="site-footer">
-        <div class="container footer-content simplified-footer">
-          <div class="footer-left">
-            <div class="footer-logo-icons">
-              <img
-                src="assets/images/tasky-pro-white.png"
-                alt="Tasky Logo"
-                class="footer-logo"
-              />
-              <div class="social-icons">
-                <a
-                  href="https://youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/images/landing/youtube.svg"
-                    alt="Youtube Logo"
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/images/landing/linkedin.svg"
-                    alt="Linkedin Logo"
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com/taskyproapp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="assets/images/landing/instagram.svg"
-                    alt="Instagram Logo"
-                  />
-                </a>
-              </div>
+    <!-- Video Demo Section -->
+    <section class="video-demo-section">
+      <div class="container">
+        <h2 class="section-title reveal">Veja o Tasky Pro em ação</h2>
+        <p class="section-subtitle reveal delay-1">Descubra como organizar sua equipe em menos de 5 minutos</p>
+        <div class="video-container" onclick="openVideoModal()">
+          <div class="video-thumbnail">
+            <img src="assets/images/landing/hero-image-overview.png" alt="Demo do Tasky Pro">
+            <div class="play-button">
+              <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="40" fill="rgba(66, 99, 235, 0.9)" />
+                <path d="M32 25L55 40L32 55V25Z" fill="white" />
+              </svg>
             </div>
-            <div class="footer-legal">
-              <!-- <a href="politica-de-privacidade.html">Política de privacidade</a>
-              <a href="termos-de-uso.html">Termos de serviço</a> -->
-              <a href="#">Política de privacidade</a>
-              <a href="#">Termos de serviço</a>
-            </div>
-          </div>
-
-          <div class="footer-right">
-            <p>© Tasky Pro • Todos os direitos reservados</p>
+            <div class="video-duration">2:45</div>
           </div>
         </div>
-      </footer>
+      </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal-overlay" id="videoModal">
+      <div class="video-modal">
+        <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
+        <div class="video-wrapper">
+          <!-- Substitua VIDEO_ID pelo ID do seu vídeo do YouTube -->
+          <iframe id="videoIframe" src="" data-src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&rel=0"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
     </div>
 
     <script>
-      // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          const href = this.getAttribute("href");
-          if (href !== "#" && href.length > 1) {
-            const target = document.querySelector(href);
-            if (target) {
-              e.preventDefault();
-              target.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-            }
-          }
-        });
-      });
-
-      // Mobile menu toggle
-      const mobileMenuToggle = document.getElementById("mobileMenuToggle");
-      const navLinks = document.getElementById("navLinks");
-      const authLinks = document.getElementById("authLinks");
-      const navbar = document.querySelector(".navbar");
-      const body = document.body;
-
-      if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener("click", function () {
-          navbar.classList.toggle("menu-open");
-          mobileMenuToggle.classList.toggle("active");
-          body.classList.toggle("menu-open");
-        });
-
-        // Close menu when clicking on any link
-        if (navLinks) {
-          const navLinksList = navLinks.querySelectorAll("a");
-          navLinksList.forEach((link) => {
-            link.addEventListener("click", function () {
-              navbar.classList.remove("menu-open");
-              mobileMenuToggle.classList.remove("active");
-              body.classList.remove("menu-open");
-            });
-          });
-        }
-
-        if (authLinks) {
-          const authLinksList = authLinks.querySelectorAll("a");
-          authLinksList.forEach((link) => {
-            link.addEventListener("click", function () {
-              navbar.classList.remove("menu-open");
-              mobileMenuToggle.classList.remove("active");
-              body.classList.remove("menu-open");
-            });
-          });
-        }
+      function openVideoModal() {
+        const modal = document.getElementById('videoModal');
+        const iframe = document.getElementById('videoIframe');
+        iframe.src = iframe.dataset.src;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
       }
 
-      // Scroll animations for feature sections
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -100px 0px",
-      };
+      function closeVideoModal() {
+        const modal = document.getElementById('videoModal');
+        const iframe = document.getElementById('videoIframe');
+        iframe.src = '';
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate");
-            // Unobserve after animation to prevent re-triggering
-            observer.unobserve(entry.target);
-          }
-        });
-      }, observerOptions);
-
-      document.querySelectorAll(".feature-detail").forEach((section) => {
-        observer.observe(section);
+      document.getElementById('videoModal').addEventListener('click', function (e) {
+        if (e.target === this) closeVideoModal();
       });
 
-      // FAQ Accordion functionality
-      document.querySelectorAll(".faq-question").forEach((question) => {
-        question.addEventListener("click", function () {
-          const isExpanded = this.getAttribute("aria-expanded") === "true";
-          const answer = this.nextElementSibling;
-
-          // Close all other FAQ items
-          document.querySelectorAll(".faq-question").forEach((q) => {
-            if (q !== this) {
-              q.setAttribute("aria-expanded", "false");
-              q.nextElementSibling.style.maxHeight = null;
-              q.nextElementSibling.style.padding = null;
-            }
-          });
-
-          // Toggle current item
-          if (isExpanded) {
-            this.setAttribute("aria-expanded", "false");
-            answer.style.maxHeight = null;
-            answer.style.padding = null;
-          } else {
-            this.setAttribute("aria-expanded", "true");
-            answer.style.maxHeight = answer.scrollHeight + "px";
-            answer.style.paddingBottom = "1.5rem";
-          }
-        });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && document.getElementById('videoModal').classList.contains('active')) {
+          closeVideoModal();
+        }
       });
     </script>
-  </body>
+
+    <!-- Call to Action -->
+    <section class="cta-section cta-modern gradient-animated" id="contact">
+      <div class="container">
+        <div class="cta-content reveal">
+          <h2 class="cta-title-xl">Comece agora e veja a diferença</h2>
+          <p class="cta-subtitle">Inicie gratuitamente. Sem cartão de crédito. Sem complicação.</p>
+          <div class="cta-buttons">
+            <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-white btn-xl">QUERO COMEÇAR AGORA</a>
+          </div>
+          <div class="trust-badges">
+            <span class="trust-badge">🔒 Dados seguros</span>
+            <span class="trust-badge">💬 Suporte humanizado</span>
+            <span class="trust-badge">💡 Fácil de usar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="faq-title">Perguntas frequentes</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Há uma versão grátis do Tasky Pro?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sim! Oferecemos um período de teste gratuito para que você
+                possa experimentar todas as funcionalidades da plataforma.
+                Após o período de teste, você pode escolher o plano que melhor
+                se adequa às necessidades da sua empresa.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Quanto custa o Tasky Pro?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Nossos planos são flexíveis e baseados no número de usuários e
+                funcionalidades necessárias. Visite nossa página de preços
+                para ver todos os planos disponíveis e escolher o que melhor
+                se adequa ao seu negócio.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Posso pagar mensalmente?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sim! Oferecemos opções de pagamento mensal e anual. O plano
+                anual oferece desconto em relação ao pagamento mensal.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Qual plano é adequado para mim?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                A escolha do plano depende do tamanho da sua equipe e das
+                funcionalidades que você precisa. Nossa página de preços
+                oferece uma comparação detalhada de cada plano para ajudá-lo a
+                tomar a melhor decisão.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Como funciona o controle de qualidade?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                O sistema possui um fluxo de verificação integrado. Quando uma
+                tarefa é concluída, ela pode ser enviada para verificação por
+                um revisor designado. Apenas após a aprovação, a tarefa é
+                marcada como finalizada, garantindo qualidade em todas as
+                entregas.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Como funciona o cancelamento?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Você pode cancelar sua assinatura a qualquer momento. Não há
+                taxas de cancelamento e você terá acesso até o final do
+                período pago.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>O Tasky Pro é seguro?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sim! A segurança dos seus dados é nossa prioridade. Utilizamos
+                criptografia SSL/TLS, backups regulares e seguimos as melhores
+                práticas de segurança da informação. Seus dados estão
+                protegidos e você tem controle sobre suas informações: pode
+                acessar, corrigir, exportar ou solicitar a exclusão dos seus
+                dados a qualquer momento, conforme seus direitos garantidos
+                pela LGPD.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Posso alterar meu plano depois?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sim! Você pode fazer upgrade ou downgrade do seu plano a
+                qualquer momento. As alterações serão aplicadas no próximo
+                ciclo de cobrança.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Quais métodos de pagamento vocês aceitam?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Aceitamos cartões de crédito das principais bandeiras. Todos
+                os pagamentos são processados de forma segura através de
+                nossos parceiros de pagamento.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Como faço para começar?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                É muito simples! Basta clicar em "COMECE GRÁTIS" e criar sua
+                conta. Você terá acesso imediato à plataforma e poderá começar
+                a organizar suas tarefas e equipe em minutos. Não é necessário
+                cartão de crédito para começar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content simplified-footer">
+        <div class="footer-left">
+          <div class="footer-logo-icons">
+            <img src="assets/images/tasky-pro-white.png" alt="Tasky Logo" class="footer-logo" />
+            <div class="social-icons">
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/landing/youtube.svg" alt="Youtube Logo" />
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/landing/linkedin.svg" alt="Linkedin Logo" />
+              </a>
+              <a href="https://www.instagram.com/taskyproapp" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/landing/instagram.svg" alt="Instagram Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-legal">
+            <!-- <a href="politica-de-privacidade.html">Política de privacidade</a>
+              <a href="termos-de-uso.html">Termos de serviço</a> -->
+            <a href="#">Política de privacidade</a>
+            <a href="#">Termos de serviço</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p>© Tasky Pro • Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        const href = this.getAttribute("href");
+        if (href !== "#" && href.length > 1) {
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        }
+      });
+    });
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+    const navLinks = document.getElementById("navLinks");
+    const authLinks = document.getElementById("authLinks");
+    const navbar = document.querySelector(".navbar");
+    const body = document.body;
+
+    if (mobileMenuToggle) {
+      mobileMenuToggle.addEventListener("click", function () {
+        navbar.classList.toggle("menu-open");
+        mobileMenuToggle.classList.toggle("active");
+        body.classList.toggle("menu-open");
+      });
+
+      // Close menu when clicking on any link
+      if (navLinks) {
+        const navLinksList = navLinks.querySelectorAll("a");
+        navLinksList.forEach((link) => {
+          link.addEventListener("click", function () {
+            navbar.classList.remove("menu-open");
+            mobileMenuToggle.classList.remove("active");
+            body.classList.remove("menu-open");
+          });
+        });
+      }
+
+      if (authLinks) {
+        const authLinksList = authLinks.querySelectorAll("a");
+        authLinksList.forEach((link) => {
+          link.addEventListener("click", function () {
+            navbar.classList.remove("menu-open");
+            mobileMenuToggle.classList.remove("active");
+            body.classList.remove("menu-open");
+          });
+        });
+      }
+    }
+
+    // Scroll animations for feature sections
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -100px 0px",
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+          // Unobserve after animation to prevent re-triggering
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll(".feature-detail").forEach((section) => {
+      observer.observe(section);
+    });
+
+    // FAQ Accordion functionality
+    document.querySelectorAll(".faq-question").forEach((question) => {
+      question.addEventListener("click", function () {
+        const isExpanded = this.getAttribute("aria-expanded") === "true";
+        const answer = this.nextElementSibling;
+
+        // Close all other FAQ items
+        document.querySelectorAll(".faq-question").forEach((q) => {
+          if (q !== this) {
+            q.setAttribute("aria-expanded", "false");
+            q.nextElementSibling.style.maxHeight = null;
+            q.nextElementSibling.style.padding = null;
+          }
+        });
+
+        // Toggle current item
+        if (isExpanded) {
+          this.setAttribute("aria-expanded", "false");
+          answer.style.maxHeight = null;
+          answer.style.padding = null;
+        } else {
+          this.setAttribute("aria-expanded", "true");
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          answer.style.paddingBottom = "1.5rem";
+        }
+      });
+    });
+  </script>
+
+  <!-- Exit Intent Popup -->
+  <div class="exit-popup-overlay" id="exitPopup">
+    <div class="exit-popup">
+      <button class="exit-popup-close" onclick="closeExitPopup()">&times;</button>
+      <div class="exit-popup-icon">🎁</div>
+      <h2>Espera! Tem certeza?</h2>
+      <p class="popup-subtitle">Teste o Tasky Pro por 14 dias</p>
+      <p class="popup-description">100% grátis. Sem cartão de crédito necessário.</p>
+      <a href="https://app.taskypro.com.br/cadastrar" class="btn-popup">COMEÇAR TESTE GRÁTIS</a>
+      <button class="popup-dismiss" onclick="closeExitPopup()">Não, obrigado</button>
+    </div>
+  </div>
+
+  <script>
+    // Exit Intent Popup
+    (function () {
+      let popupShown = sessionStorage.getItem('exitPopupShown');
+      let pageLoaded = false;
+
+      // Wait 5 seconds after page load
+      setTimeout(() => { pageLoaded = true; }, 5000);
+
+      document.addEventListener('mouseout', function (e) {
+        if (!pageLoaded || popupShown) return;
+
+        // Check if mouse is leaving from the top
+        if (e.clientY < 10 && e.relatedTarget === null) {
+          document.getElementById('exitPopup').classList.add('active');
+          sessionStorage.setItem('exitPopupShown', 'true');
+          popupShown = true;
+        }
+      });
+
+      // Close on overlay click
+      document.getElementById('exitPopup').addEventListener('click', function (e) {
+        if (e.target === this) closeExitPopup();
+      });
+
+      // Close on ESC key
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeExitPopup();
+      });
+    })();
+
+    function closeExitPopup() {
+      document.getElementById('exitPopup').classList.remove('active');
+    }
+  </script>
+  <script src="animations.js"></script>
+</body>
+
 </html>
