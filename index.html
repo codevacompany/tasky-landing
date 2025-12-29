@@ -32,9 +32,7 @@
   <meta property="twitter:image"
     content="https://tasky-system.vercel.app/assets/images/landing/hero-image-overview.png" />
 
-  <title>
-    Tasky Pro - Gestão Inteligente de Tarefas e Comunicação Empresarial
-  </title>
+  <title>Tasky Pro | Tarefas e Equipes</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="animations.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,8 +42,8 @@
 
 <body>
   <div class="landing-page">
-    <!-- Hero Section -->
-    <header class="hero-section">
+    <!-- Hero Section - First Viewport (Text Only) -->
+    <header class="hero-section hero-fullscreen">
       <nav class="navbar">
         <div class="menu">
           <div class="logo">
@@ -68,28 +66,42 @@
         </div>
       </nav>
 
-      <div class="hero-content hero-content-modern">
+      <div class="hero-content hero-content-centered">
         <div class="hero-text-center reveal">
           <h1 class="hero-title-xl">
-            Tenha sua equipe<br>organizada em <span class="gradient-text">24 horas</span>
+            Pare de cobrar o tempo todo.<br><strong>Deixe o <span class="gradient-text">Tasky</span> fazer
+              isso.</strong>
           </h1>
           <p class="hero-subtitle-lg">
-            Gestão inteligente com dados em um só lugar.<br>
+            Tenha sua equipe organizada em <strong>24 horas</strong>.<br>
             Nada fica sem dono. Nada fica sem prazo.
           </p>
           <div class="hero-cta-group">
-            <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-primary btn-xl btn-pulse">
-              QUERO COMEÇAR AGORA
-            </a>
+            <div class="hero-buttons-row">
+              <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-primary btn-xl btn-pulse">
+                TESTAR POR 14 DIAS
+              </a>
+              <a href="#video-demo" class="btn btn-outline-white">
+                VEJA COMO FUNCIONA
+              </a>
+            </div>
             <p class="cta-subtext-modern">
-              <span class="check-icon">✓</span> 14 dias grátis
+              <span class="check-icon">✓</span> Acesso completo
               <span class="check-icon">✓</span> Sem cartão
               <span class="check-icon">✓</span> Cancele quando quiser
             </p>
           </div>
         </div>
+        <div class="scroll-indicator-wrapper">
+          <div class="scroll-mouse"></div>
+        </div>
+      </div>
+    </header>
 
-        <div class="hero-image-modern reveal delay-2">
+    <!-- Second Viewport - Dashboard Image + Metrics -->
+    <section class="hero-image-section">
+      <div class="container">
+        <div class="hero-image-modern reveal">
           <div class="hero-image-wrapper">
             <img src="assets/images/landing/hero-image-overview.png" alt="Tasky Dashboard" class="hero-screenshot" />
             <div class="floating-badge badge-top-right glass">
@@ -103,10 +115,8 @@
           </div>
         </div>
       </div>
-    </header>
 
-    <!-- Social Proof - Metrics -->
-    <section class="metrics-section">
+      <!-- Metrics inside the image section -->
       <div class="container">
         <div class="metrics-grid metrics-simple">
           <div class="metric-item-simple reveal delay-1">
@@ -116,12 +126,12 @@
           </div>
           <div class="metric-item-simple reveal delay-2">
             <span class="metric-icon">✅</span>
-            <span class="metric-value" data-count="10000" data-prefix="+">+10.000</span>
+            <span class="metric-value" data-count="5000" data-prefix="+">+5.000</span>
             <span class="metric-label">Tarefas gerenciadas</span>
           </div>
           <div class="metric-item-simple reveal delay-3">
             <span class="metric-icon">⏱️</span>
-            <span class="metric-value" data-count="2500" data-prefix="+" data-suffix="h">+2.500h</span>
+            <span class="metric-value" data-count="1000" data-prefix="+" data-suffix="h">+1.000h</span>
             <span class="metric-label">Horas economizadas</span>
           </div>
           <div class="metric-item-simple reveal delay-4">
@@ -130,6 +140,7 @@
             <span class="metric-label">Avaliação média</span>
           </div>
         </div>
+      </div>
     </section>
 
     <!-- Target Audience Section -->
@@ -147,8 +158,8 @@
             <h3>Consultorias e Serviços</h3>
           </div>
           <div class="audience-card reveal delay-3 tilt-card hover-lift">
-            <span class="audience-icon">🔧</span>
-            <h3>Prestadores de Serviços</h3>
+            <span class="audience-icon">🚀</span>
+            <h3>Escritórios e Startups</h3>
           </div>
           <div class="audience-card reveal delay-4 tilt-card hover-lift">
             <span class="audience-icon">🏠</span>
@@ -272,7 +283,6 @@
               <div class="testimonial-info">
                 <span class="testimonial-name">Marina Costa</span>
                 <span class="testimonial-role">Sócia-Diretora</span>
-                <span class="testimonial-company">Impulso Digital</span>
               </div>
             </div>
           </div>
@@ -295,7 +305,6 @@
               <div class="testimonial-info">
                 <span class="testimonial-name">Ricardo Almeida</span>
                 <span class="testimonial-role">Gerente de Operações</span>
-                <span class="testimonial-company">Nexus Contábil</span>
               </div>
             </div>
           </div>
@@ -318,7 +327,6 @@
               <div class="testimonial-info">
                 <span class="testimonial-name">Fernanda Oliveira</span>
                 <span class="testimonial-role">Produtora Executiva</span>
-                <span class="testimonial-company">Frame Studio</span>
               </div>
             </div>
           </div>
@@ -327,21 +335,15 @@
     </section>
 
     <!-- Video Demo Section -->
-    <section class="video-demo-section">
+    <section class="video-demo-section" id="video-demo">
       <div class="container">
         <h2 class="section-title reveal">Veja o Tasky Pro em ação</h2>
         <p class="section-subtitle reveal delay-1">Descubra como organizar sua equipe em menos de 5 minutos</p>
-        <div class="video-container" onclick="openVideoModal()">
-          <div class="video-thumbnail">
-            <img src="assets/images/landing/hero-image-overview.png" alt="Demo do Tasky Pro">
-            <div class="play-button">
-              <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="40" cy="40" r="40" fill="rgba(66, 99, 235, 0.9)" />
-                <path d="M32 25L55 40L32 55V25Z" fill="white" />
-              </svg>
-            </div>
-            <div class="video-duration">2:45</div>
-          </div>
+        <div class="video-player-container reveal">
+          <video id="demoVideo" controls playsinline poster="assets/images/landing/hero-image-overview.png">
+            <source src="assets/videos/tasky-comofunciona.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+          </video>
         </div>
       </div>
     </section>
@@ -351,12 +353,10 @@
       <div class="video-modal">
         <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
         <div class="video-wrapper">
-          <!-- Substitua VIDEO_ID pelo ID do seu vídeo do YouTube -->
-          <iframe id="videoIframe" src="" data-src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&rel=0"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <video id="demoVideo" controls playsinline>
+            <source src="assets/videos/tasky-comofunciona.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+          </video>
         </div>
       </div>
     </div>
@@ -364,16 +364,17 @@
     <script>
       function openVideoModal() {
         const modal = document.getElementById('videoModal');
-        const iframe = document.getElementById('videoIframe');
-        iframe.src = iframe.dataset.src;
+        const video = document.getElementById('demoVideo');
         modal.classList.add('active');
+        video.play();
         document.body.style.overflow = 'hidden';
       }
 
       function closeVideoModal() {
         const modal = document.getElementById('videoModal');
-        const iframe = document.getElementById('videoIframe');
-        iframe.src = '';
+        const video = document.getElementById('demoVideo');
+        video.pause();
+        video.currentTime = 0;
         modal.classList.remove('active');
         document.body.style.overflow = '';
       }
