@@ -1911,6 +1911,7 @@ img {
     padding: 0 1rem;
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 
