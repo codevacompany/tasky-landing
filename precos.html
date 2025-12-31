@@ -1,309 +1,417 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Planos Tasky Pro — descubra a melhor opção para acelerar o atendimento e a colaboração da sua equipe."
+    />
+    <title>Tasky Pro • Planos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Planos Tasky Pro — descubra a melhor opção para acelerar o atendimento e a colaboração da sua equipe." />
-  <title>Tasky Pro • Planos</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="animations.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="landing-page pricing-page">
-    <header class="hero-section">
-      <nav class="navbar">
-        <div class="menu">
-          <a href="index.html" class="logo">
-            <img src="assets/images/tasky-pro-white.png" alt="Tasky Logo" />
-          </a>
-          <div class="nav-links">
-            <a href="index.html">Inicio</a>
-            <a href="recursos.html">Recursos</a>
-            <a href="precos.html" class="active-link">Planos</a>
-          </div>
-        </div>
-        <div class="auth-links">
-          <a href="https://app.taskypro.com.br/login" class="login-btn">Entrar</a>
-          <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-primary hero-button">COMECE AGORA</a>
-        </div>
-      </nav>
-
-      <div class="pricing-section" id="pricing">
-        <div class="pricing-gradient">
-          <div class="container">
-            <div class="pricing-header reveal">
-              <h2 class="hero-title-xl">Escolha o plano ideal<br>para sua <span class="gradient-text">empresa</span>
-              </h2>
-              <p class="hero-subtitle-lg">
-                Planos flexíveis que crescem junto com seu negócio.<br>Garantia de 14 dias para testar todas as
-                funcionalidades.
-              </p>
-            </div>
-
-            <div class="billing-wrapper">
-              <span class="billing-label" data-billing-option="mensal">Mensal</span>
-              <button id="billingToggle" class="billing-toggle" type="button" aria-label="Alternar forma de cobrança">
-                <span class="toggle-knob"></span>
-              </button>
-              <span class="billing-label active" data-billing-option="anual">Anual</span>
-              <span class="discount-pill">20% OFF</span>
-            </div>
-
-            <div class="plans-grid">
-              <!-- Plano Básico -->
-              <article class="plan-card pricing-card-modern reveal delay-1" data-price-monthly="99"
-                data-price-yearly="950">
-                <div class="plan-card-header">
-                  <div class="plan-title-group">
-                    <p class="plan-name">Básico</p>
-                    <span class="plan-context">Ideal para microempresas e startups</span>
-                  </div>
-                </div>
-                <div class="plan-price">
-                  <span class="currency">R$</span>
-                  <span class="value" data-price>99</span>
-                  <span class="period">/mês</span>
-                </div>
-                <p class="billing-note" data-billing-note>Cobrança anual</p>
-                <ul class="plan-features">
-                  <li>Até 5 usuários</li>
-                  <li>Funcionalidades básicas</li>
-                  <li>Dashboard simples</li>
-                  <li>Notificações in-app</li>
-                </ul>
-                <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-primary plan-btn">QUERO COMEÇAR AGORA</a>
-              </article>
-
-              <!-- Plano Essencial -->
-              <article class="plan-card pricing-card-modern highlight reveal delay-2" data-price-monthly="199"
-                data-price-yearly="1900">
-                <div class="plan-card-header">
-                  <div class="plan-title-group">
-                    <p class="plan-name">Essencial</p>
-                    <span class="plan-context">Ideal para empresas em crescimento</span>
-                  </div>
-                  <span class="plan-badge gradient-animated badge-procurado">Mais Procurado</span>
-                </div>
-                <div class="plan-price">
-                  <span class="currency">R$</span>
-                  <span class="value" data-price>199</span>
-                  <span class="period">/mês</span>
-                </div>
-                <p class="billing-note" data-billing-note>Cobrança anual</p>
-                <ul class="plan-features">
-                  <li>Até 15 usuários</li>
-                  <li>Tudo do plano Básico</li>
-                  <li>Analytics básicos</li>
-                  <li>Notificações por e-mail</li>
-                </ul>
-                <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-white plan-btn btn-pulse">QUERO COMEÇAR
-                  AGORA</a>
-              </article>
-
-              <!-- Plano Avançado -->
-              <article class="plan-card pricing-card-modern reveal delay-3" data-price-monthly="399"
-                data-price-yearly="3800">
-                <div class="plan-card-header">
-                  <div class="plan-title-group">
-                    <p class="plan-name">Avançado</p>
-                    <span class="plan-context">Ideal para empresas médias</span>
-                  </div>
-                </div>
-                <div class="plan-price">
-                  <span class="currency">R$</span>
-                  <span class="value" data-price>399</span>
-                  <span class="period">/mês</span>
-                </div>
-                <p class="billing-note" data-billing-note>Cobrança anual</p>
-                <ul class="plan-features">
-                  <li>Até 30 usuários</li>
-                  <li>Tudo do plano Essencial</li>
-                  <li>Analytics avançados</li>
-                  <li>Supervisores por setor</li>
-                </ul>
-                <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-primary plan-btn">QUERO COMEÇAR AGORA</a>
-              </article>
-
-              <!-- Plano Customizado -->
-              <article class="plan-card pricing-card-modern reveal delay-4" data-price-monthly="0" data-price-yearly="0"
-                data-custom-plan="true">
-                <div class="plan-card-header">
-                  <div class="plan-title-group">
-                    <p class="plan-name">Personalizado</p>
-                    <span class="plan-context">Ideal para grandes operações</span>
-                  </div>
-                </div>
-                <div class="custom-plan-description">
-                  <p>Soluções sob medida para equipes com necessidades específicas e alto volume.</p>
-                </div>
-                <ul class="plan-features">
-                  <li>Usuários ilimitados</li>
-                  <li>Suporte 24/7 dedicado</li>
-                  <li>Integrações customizadas</li>
-                  <li>SLA garantido</li>
-                </ul>
-                <a href="https://wa.me/5511999999999" class="btn btn-primary plan-btn outline">FALAR COM
-                  ESPECIALISTA</a>
-              </article>
+  <body>
+    <div class="landing-page pricing-page">
+      <header class="hero-section">
+        <nav class="navbar">
+          <div class="menu">
+            <a href="index.html" class="logo">
+              <img src="assets/images/tasky-pro-white.png" alt="Tasky Logo" />
+            </a>
+            <button
+              class="mobile-menu-toggle"
+              aria-label="Toggle menu"
+              id="mobileMenuToggle"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+              <a href="index.html">Inicio</a>
+              <a href="recursos.html">Recursos</a>
+              <a href="precos.html" class="active-link">Planos</a>
             </div>
           </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Comparison Table Section -->
-    <section class="comparison-section">
-      <div class="container">
-        <h2 class="section-title reveal">Compare todos os recursos por plano</h2>
-        <div class="comparison-table-wrapper reveal">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th class="feature-col">Recurso</th>
-                <th>Básico</th>
-                <th class="highlight-col">Essencial</th>
-                <th>Avançado</th>
-                <th>Personalizado</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="feature-name">Usuários</td>
-                <td>Até 5</td>
-                <td class="highlight-col">Até 15</td>
-                <td>Até 30</td>
-                <td>Ilimitado</td>
-              </tr>
-              <tr>
-                <td class="feature-name">Tarefas ilimitadas</td>
-                <td><span class="check">✓</span></td>
-                <td class="highlight-col"><span class="check">✓</span></td>
-                <td><span class="check">✓</span></td>
-                <td><span class="check">✓</span></td>
-              </tr>
-              <tr>
-                <td class="feature-name">Fluxo de aprovações</td>
-                <td><span class="dash">—</span></td>
-                <td class="highlight-col"><span class="check">✓</span></td>
-                <td><span class="check">✓</span></td>
-                <td><span class="check">✓</span></td>
-              </tr>
-              <tr>
-                <td class="feature-name">Analytics</td>
-                <td>Básico</td>
-                <td class="highlight-col">Básico</td>
-                <td>Avançado</td>
-                <td>Custom</td>
-              </tr>
-              <tr>
-                <td class="feature-name">Suporte humanizado</td>
-                <td><span class="check">✓</span></td>
-                <td class="highlight-col"><span class="check">✓</span></td>
-                <td><span class="check">✓</span></td>
-                <td>Prioritário 24/7</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- Novo CTA Section (Igual da Home) -->
-    <section class="cta-section cta-modern gradient-animated" id="contact">
-      <div class="container">
-        <div class="cta-content reveal">
-          <h2 class="cta-title-xl">Comece agora e veja a diferença</h2>
-          <p class="cta-subtitle">Inicie gratuitamente. Sem cartão de crédito. Sem complicação.</p>
-          <div class="cta-buttons">
-            <a href="https://app.taskypro.com.br/cadastrar" class="btn btn-white btn-xl">QUERO COMEÇAR AGORA</a>
+          <div class="auth-links" id="authLinks">
+            <a href="https://app.taskypro.com.br/login" class="login-btn"
+              >Entrar</a
+            >
+            <a
+              href="https://app.taskypro.com.br/cadastrar"
+              class="btn btn-primary hero-button"
+              >COMECE AGORA</a
+            >
           </div>
-          <div class="trust-badges">
-            <span class="trust-badge">🔒 Dados seguros</span>
-            <span class="trust-badge">💬 Suporte humanizado</span>
-            <span class="trust-badge">💡 Fácil de usar</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        </nav>
 
-    <footer class="site-footer">
-      <div class="container footer-content simplified-footer">
-        <div class="footer-left">
-          <div class="footer-logo-icons">
-            <img src="assets/images/tasky-pro-white.png" alt="Tasky Logo" class="footer-logo" />
-            <div class="social-icons">
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/landing/youtube.svg" alt="Youtube Logo" />
-              </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/landing/linkedin.svg" alt="Linkedin Logo" />
-              </a>
-              <a href="https://www.instagram.com/taskyproapp" target="_blank" rel="noopener noreferrer">
-                <img src="assets/images/landing/instagram.svg" alt="Instagram Logo" />
-              </a>
+        <div class="pricing-section" id="pricing">
+          <div class="pricing-gradient">
+            <div class="container">
+              <div class="pricing-header reveal">
+                <h2 class="hero-title-xl">
+                  Escolha o plano ideal<br />para sua
+                  <span class="gradient-text">empresa</span>
+                </h2>
+                <p class="hero-subtitle-lg">
+                  Planos flexíveis que crescem junto com seu negócio.<br />Garantia
+                  de 14 dias para testar todas as funcionalidades.
+                </p>
+              </div>
+
+              <div class="billing-wrapper">
+                <span class="billing-label" data-billing-option="mensal"
+                  >Mensal</span
+                >
+                <button
+                  id="billingToggle"
+                  class="billing-toggle"
+                  type="button"
+                  aria-label="Alternar forma de cobrança"
+                >
+                  <span class="toggle-knob"></span>
+                </button>
+                <span class="billing-label active" data-billing-option="anual"
+                  >Anual</span
+                >
+                <span class="discount-pill">20% OFF</span>
+              </div>
+
+              <div class="plans-grid">
+                <!-- Plano Básico -->
+                <article
+                  class="plan-card pricing-card-modern reveal delay-1"
+                  data-price-monthly="99"
+                  data-price-yearly="950"
+                >
+                  <div class="plan-card-header">
+                    <div class="plan-title-group">
+                      <p class="plan-name">Básico</p>
+                      <span class="plan-context"
+                        >Ideal para microempresas e startups</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan-price">
+                    <span class="currency">R$</span>
+                    <span class="value" data-price>99</span>
+                    <span class="period">/mês</span>
+                  </div>
+                  <p class="billing-note" data-billing-note>Cobrança anual</p>
+                  <ul class="plan-features">
+                    <li>Até 5 usuários</li>
+                    <li>Funcionalidades básicas</li>
+                    <li>Dashboard simples</li>
+                    <li>Notificações in-app</li>
+                  </ul>
+                  <a
+                    href="https://app.taskypro.com.br/cadastrar"
+                    class="btn btn-primary plan-btn"
+                    >QUERO COMEÇAR AGORA</a
+                  >
+                </article>
+
+                <!-- Plano Essencial -->
+                <article
+                  class="plan-card pricing-card-modern highlight reveal delay-2"
+                  data-price-monthly="199"
+                  data-price-yearly="1900"
+                >
+                  <div class="plan-card-header">
+                    <div class="plan-title-group">
+                      <p class="plan-name">Essencial</p>
+                      <span class="plan-context"
+                        >Ideal para empresas em crescimento</span
+                      >
+                    </div>
+                    <span class="plan-badge gradient-animated badge-procurado"
+                      >Mais Procurado</span
+                    >
+                  </div>
+                  <div class="plan-price">
+                    <span class="currency">R$</span>
+                    <span class="value" data-price>199</span>
+                    <span class="period">/mês</span>
+                  </div>
+                  <p class="billing-note" data-billing-note>Cobrança anual</p>
+                  <ul class="plan-features">
+                    <li>Até 15 usuários</li>
+                    <li>Tudo do plano Básico</li>
+                    <li>Analytics básicos</li>
+                    <li>Notificações por e-mail</li>
+                  </ul>
+                  <a
+                    href="https://app.taskypro.com.br/cadastrar"
+                    class="btn btn-white plan-btn btn-pulse"
+                    >QUERO COMEÇAR AGORA</a
+                  >
+                </article>
+
+                <!-- Plano Avançado -->
+                <article
+                  class="plan-card pricing-card-modern reveal delay-3"
+                  data-price-monthly="399"
+                  data-price-yearly="3800"
+                >
+                  <div class="plan-card-header">
+                    <div class="plan-title-group">
+                      <p class="plan-name">Avançado</p>
+                      <span class="plan-context"
+                        >Ideal para empresas médias</span
+                      >
+                    </div>
+                  </div>
+                  <div class="plan-price">
+                    <span class="currency">R$</span>
+                    <span class="value" data-price>399</span>
+                    <span class="period">/mês</span>
+                  </div>
+                  <p class="billing-note" data-billing-note>Cobrança anual</p>
+                  <ul class="plan-features">
+                    <li>Até 30 usuários</li>
+                    <li>Tudo do plano Essencial</li>
+                    <li>Analytics avançados</li>
+                    <li>Supervisores por setor</li>
+                  </ul>
+                  <a
+                    href="https://app.taskypro.com.br/cadastrar"
+                    class="btn btn-primary plan-btn"
+                    >QUERO COMEÇAR AGORA</a
+                  >
+                </article>
+
+                <!-- Plano Customizado -->
+                <article
+                  class="plan-card pricing-card-modern reveal delay-4"
+                  data-price-monthly="0"
+                  data-price-yearly="0"
+                  data-custom-plan="true"
+                >
+                  <div class="plan-card-header">
+                    <div class="plan-title-group">
+                      <p class="plan-name">Personalizado</p>
+                      <span class="plan-context"
+                        >Ideal para grandes operações</span
+                      >
+                    </div>
+                  </div>
+                  <div class="custom-plan-description">
+                    <p>
+                      Soluções sob medida para equipes com necessidades
+                      específicas e alto volume.
+                    </p>
+                  </div>
+                  <ul class="plan-features">
+                    <li>Usuários ilimitados</li>
+                    <li>Suporte 24/7 dedicado</li>
+                    <li>Integrações customizadas</li>
+                    <li>SLA garantido</li>
+                  </ul>
+                  <a
+                    href="https://wa.me/5511999999999"
+                    class="btn btn-primary plan-btn outline"
+                    >FALAR COM ESPECIALISTA</a
+                  >
+                </article>
+              </div>
             </div>
           </div>
-          <div class="footer-legal">
-            <a href="#">Política de privacidade</a>
-            <a href="#">Termos de serviço</a>
+        </div>
+      </header>
+
+      <!-- Comparison Table Section -->
+      <section class="comparison-section">
+        <div class="container">
+          <h2 class="section-title reveal">
+            Compare todos os recursos por plano
+          </h2>
+          <div class="comparison-table-wrapper reveal">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th class="feature-col">Recurso</th>
+                  <th>Básico</th>
+                  <th class="highlight-col">Essencial</th>
+                  <th>Avançado</th>
+                  <th>Personalizado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="feature-name">Usuários</td>
+                  <td>Até 5</td>
+                  <td class="highlight-col">Até 15</td>
+                  <td>Até 30</td>
+                  <td>Ilimitado</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">Tarefas ilimitadas</td>
+                  <td><span class="check">✓</span></td>
+                  <td class="highlight-col"><span class="check">✓</span></td>
+                  <td><span class="check">✓</span></td>
+                  <td><span class="check">✓</span></td>
+                </tr>
+                <tr>
+                  <td class="feature-name">Fluxo de aprovações</td>
+                  <td><span class="dash">—</span></td>
+                  <td class="highlight-col"><span class="check">✓</span></td>
+                  <td><span class="check">✓</span></td>
+                  <td><span class="check">✓</span></td>
+                </tr>
+                <tr>
+                  <td class="feature-name">Analytics</td>
+                  <td>Básico</td>
+                  <td class="highlight-col">Básico</td>
+                  <td>Avançado</td>
+                  <td>Custom</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">Suporte humanizado</td>
+                  <td><span class="check">✓</span></td>
+                  <td class="highlight-col"><span class="check">✓</span></td>
+                  <td><span class="check">✓</span></td>
+                  <td>Prioritário 24/7</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="footer-right">
-          <p>© Tasky Pro • Todos os direitos reservados</p>
+      </section>
+
+      <!-- Novo CTA Section (Igual da Home) -->
+      <section class="cta-section cta-modern gradient-animated" id="contact">
+        <div class="container">
+          <div class="cta-content reveal">
+            <h2 class="cta-title-xl">Comece agora e veja a diferença</h2>
+            <p class="cta-subtitle">
+              Inicie gratuitamente. Sem cartão de crédito. Sem complicação.
+            </p>
+            <div class="cta-buttons">
+              <a
+                href="https://app.taskypro.com.br/cadastrar"
+                class="btn btn-white btn-xl"
+                >QUERO COMEÇAR AGORA</a
+              >
+            </div>
+            <div class="trust-badges">
+              <span class="trust-badge">🔒 Dados seguros</span>
+              <span class="trust-badge">💬 Suporte humanizado</span>
+              <span class="trust-badge">💡 Fácil de usar</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
-  </div>
+      </section>
 
-  <script src="animations.js"></script>
-  <script>
-    // Pricing toggle logic
-    (function () {
-      const toggle = document.getElementById("billingToggle");
-      const labels = document.querySelectorAll(".billing-label");
-      const planCards = document.querySelectorAll(".plan-card");
-      if (!toggle) return;
+      <footer class="site-footer">
+        <div class="container footer-content simplified-footer">
+          <div class="footer-left">
+            <div class="footer-logo-icons">
+              <img
+                src="assets/images/tasky-pro-white.png"
+                alt="Tasky Logo"
+                class="footer-logo"
+              />
+              <div class="social-icons">
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="assets/images/landing/youtube.svg"
+                    alt="Youtube Logo"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="assets/images/landing/linkedin.svg"
+                    alt="Linkedin Logo"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/taskyproapp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="assets/images/landing/instagram.svg"
+                    alt="Instagram Logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer-legal">
+              <a href="#">Política de privacidade</a>
+              <a href="#">Termos de serviço</a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <p>© Tasky Pro • Todos os direitos reservados</p>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-      let mode = "anual";
+    <script src="animations.js"></script>
+    <script>
+      // Pricing toggle logic
+      (function () {
+        const toggle = document.getElementById("billingToggle");
+        const labels = document.querySelectorAll(".billing-label");
+        const planCards = document.querySelectorAll(".plan-card");
+        if (!toggle) return;
 
-      const update = () => {
-        toggle.classList.toggle("active", mode === "anual");
-        labels.forEach(l => l.classList.toggle("active", l.dataset.billingOption === mode));
+        let mode = "anual";
 
-        planCards.forEach(card => {
-          if (card.dataset.customPlan === "true") return;
-          const monthly = Number(card.dataset.priceMonthly);
-          const yearly = Number(card.dataset.priceYearly);
-          const priceEl = card.querySelector("[data-price]");
-          const noteEl = card.querySelector("[data-billing-note]");
+        const update = () => {
+          toggle.classList.toggle("active", mode === "anual");
+          labels.forEach((l) =>
+            l.classList.toggle("active", l.dataset.billingOption === mode)
+          );
 
-          if (mode === "anual") {
-            priceEl.textContent = Math.round(yearly / 12).toLocaleString("pt-BR");
-            noteEl.textContent = "Cobrança anual";
-          } else {
-            priceEl.textContent = monthly.toLocaleString("pt-BR");
-            noteEl.textContent = "Cobrança mensal";
-          }
+          planCards.forEach((card) => {
+            if (card.dataset.customPlan === "true") return;
+            const monthly = Number(card.dataset.priceMonthly);
+            const yearly = Number(card.dataset.priceYearly);
+            const priceEl = card.querySelector("[data-price]");
+            const noteEl = card.querySelector("[data-billing-note]");
+
+            if (mode === "anual") {
+              priceEl.textContent = Math.round(yearly / 12).toLocaleString(
+                "pt-BR"
+              );
+              noteEl.textContent = "Cobrança anual";
+            } else {
+              priceEl.textContent = monthly.toLocaleString("pt-BR");
+              noteEl.textContent = "Cobrança mensal";
+            }
+          });
+        };
+
+        toggle.addEventListener("click", () => {
+          mode = mode === "anual" ? "mensal" : "anual";
+          update();
         });
-      };
 
-      toggle.addEventListener("click", () => {
-        mode = mode === "anual" ? "mensal" : "anual";
-        update();
-      });
-
-      labels.forEach(l => l.addEventListener("click", () => {
-        mode = l.dataset.billingOption;
-        update();
-      }));
-    })();
-  </script>
-</body>
-
+        labels.forEach((l) =>
+          l.addEventListener("click", () => {
+            mode = l.dataset.billingOption;
+            update();
+          })
+        );
+      })();
+    </script>
+  </body>
 </html>

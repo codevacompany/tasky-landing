@@ -379,9 +379,9 @@
             <h2>Hierarquia definida e dados protegidos.</h2>
             <p>
               Separe claramente quem manda e quem executa com perfis de
-              Administrador, Supervisor e Colaborador. Precisa tratar de assuntos sensíveis?
-              Use a função "Privado" para restringir a visualização apenas aos
-              envolvidos, garantindo total sigilo.
+              Administrador, Supervisor e Colaborador. Precisa tratar de
+              assuntos sensíveis? Use a função "Privado" para restringir a
+              visualização apenas aos envolvidos, garantindo total sigilo.
             </p>
             <ul class="recurso-checklist">
               <li>Perfis de Administrador, Supervisor e Colaborador</li>
@@ -442,13 +442,13 @@
             <span class="recurso-tag">Delegação Assertiva</span>
             <h2>A tarefa certa para a pessoa certa.</h2>
             <p>
-              Acabe com o "empurra-empurra". Direcione demandas para setores
-              ou colaboradores específicos. O sistema permite adicionar
-              múltiplos responsáveis à mesma tarefa, garantindo que todos
-              saibam exatamente o que precisam entregar.
+              Acabe com o "empurra-empurra". Direcione demandas para
+              colaboradores específicos. O sistema permite adicionar múltiplos
+              responsáveis à mesma tarefa, garantindo que todos saibam
+              exatamente o que precisam entregar.
             </p>
             <ul class="recurso-checklist">
-              <li>Direcionamento por setor ou colaborador</li>
+              <li>Direcionamento por colaborador</li>
               <li>Múltiplos responsáveis por tarefa</li>
               <li>Clareza total nas atribuições</li>
             </ul>
@@ -596,33 +596,6 @@
       </footer>
     </div>
 
-    <script>
-      // Mobile menu toggle
-      const mobileMenuToggle = document.getElementById("mobileMenuToggle");
-      const navLinks = document.getElementById("navLinks");
-      const authLinks = document.getElementById("authLinks");
-      const navbar = document.querySelector(".navbar");
-      const body = document.body;
-
-      if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener("click", function () {
-          navbar.classList.toggle("menu-open");
-          mobileMenuToggle.classList.toggle("active");
-          body.classList.toggle("menu-open");
-        });
-
-        if (navLinks) {
-          const navLinksList = navLinks.querySelectorAll("a");
-          navLinksList.forEach((link) => {
-            link.addEventListener("click", function () {
-              navbar.classList.remove("menu-open");
-              mobileMenuToggle.classList.remove("active");
-              body.classList.remove("menu-open");
-            });
-          });
-        }
-      }
-    </script>
     <script src="animations.js"></script>
   </body>
 </html>

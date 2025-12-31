@@ -39,21 +39,6 @@ body {
   background: var(--secondary-dark);
 }
 
-.pricing-page .hero-section {
-  justify-content: flex-start;
-  height: auto;
-  min-height: auto;
-  max-height: none;
-  padding-top: 0;
-  align-items: stretch;
-  overflow: visible;
-}
-
-.pricing-page .navbar {
-  position: relative;
-  flex-shrink: 0;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -99,7 +84,8 @@ img {
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.5);
   color: white;
-  padding: 1.4rem 3.5rem;
+  height: 68px;
+  padding: 0 3.5rem;
   font-size: 1.2rem;
   font-weight: 700;
   border-radius: 12px;
@@ -180,21 +166,32 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   gap: 0;
   width: 100%;
+  position: relative;
 }
 
 /* Scroll Indicator */
 .scroll-indicator-wrapper {
-  margin-top: 2rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   animation: bounce-soft 2s ease-in-out infinite;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .scroll-indicator-wrapper {
+    bottom: 2.5rem;
+  }
 }
 
 .scroll-mouse {
@@ -263,9 +260,7 @@ img {
 }
 
 @media (max-width: 768px) {
-  .hero-section {
-    min-height: auto;
-  }
+  /* .hero-section min-height removed to allow hero-fullscreen class to work */
 
   .hero-fullscreen {
     min-height: 100vh;
@@ -284,6 +279,69 @@ img {
   .hero-image-section .metrics-grid {
     margin-top: 2rem;
   }
+
+  .hero-title-xl {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle-lg {
+    font-size: 1rem;
+  }
+
+  .hero-buttons-row {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .btn-xl {
+    width: 100%;
+    height: 56px;
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+
+  .cta-subtext-modern {
+    flex-direction: row;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .cta-subtext-modern span {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .btn-outline-white {
+    width: 100%;
+    height: 56px;
+    padding: 0 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .faq-section {
+    padding: 3rem 0;
+  }
+
+  .faq-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+    padding: 1.25rem 0;
+  }
+
+  .faq-answer p {
+    font-size: 0.95rem;
+  }
 }
 
 .navbar {
@@ -295,6 +353,17 @@ img {
   margin: 0 auto;
   background: transparent;
   width: 100%;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar-scrolled {
+  background: rgba(8, 16, 41, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem 4rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .menu {
@@ -551,7 +620,8 @@ img {
 }
 
 .btn-xl {
-  padding: 1.4rem 3.5rem;
+  height: 68px;
+  padding: 0 3.5rem;
   font-size: 1.2rem;
   font-weight: 700;
   border-radius: 12px;
@@ -670,46 +740,6 @@ img {
 
   .hero-title-xl {
     font-size: 3.9rem;
-  }
-}
-
-/* Responsive Hero Modern */
-@media (max-width: 768px) {
-  .hero-title-xl {
-    font-size: 2.25rem;
-  }
-
-  .hero-subtitle-lg {
-    font-size: 1rem;
-  }
-
-  .btn-xl {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
-
-  .floating-badge {
-    display: none;
-  }
-
-  .cta-subtext-modern {
-    flex-direction: row;
-    gap: 0.75rem;
-    font-size: 0.8rem;
-    justify-content: center;
-    flex-wrap: nowrap;
-  }
-
-  .cta-subtext-modern span {
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-
-  .btn-outline-white {
-    padding: 1rem 2rem;
-    font-size: 1rem;
   }
 }
 
@@ -1122,30 +1152,6 @@ img {
   }
 }
 
-@media (max-width: 768px) {
-  .pricing-section .container {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  .billing-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .plans-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 0;
-    width: 100%;
-  }
-
-  .plan-card {
-    padding: 1.5rem;
-  }
-}
-
 .plan-card {
   background: rgba(8, 16, 41, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1425,26 +1431,6 @@ img {
   padding-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  .faq-section {
-    padding: 3rem 0;
-  }
-
-  .faq-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .faq-question {
-    font-size: 1rem;
-    padding: 1.25rem 0;
-  }
-
-  .faq-answer p {
-    font-size: 0.95rem;
-  }
-}
-
 /* CTA Section */
 .cta-section {
   padding: 5rem 0;
@@ -1633,9 +1619,28 @@ img {
   .hero-section {
     justify-content: flex-start;
     align-items: stretch;
-    min-height: auto;
-    height: auto;
-    padding-top: 2rem;
+    padding-top: 0.5rem;
+  }
+
+  .floating-badge {
+    padding: 0.35rem 0.6rem !important;
+    font-size: 0.6rem !important;
+    border-radius: 8px !important;
+    gap: 0.3rem !important;
+  }
+
+  .badge-icon {
+    font-size: 0.8rem !important;
+  }
+
+  .badge-top-right {
+    top: 5% !important;
+    right: -10px !important;
+  }
+
+  .badge-bottom-left {
+    bottom: 5% !important;
+    left: -10px !important;
   }
 
   body.menu-open {
@@ -1644,10 +1649,14 @@ img {
 
   .navbar {
     position: relative;
-    padding: 1.5rem 1.75rem;
+    padding: 1rem 1.75rem;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+  }
+
+  .navbar-scrolled {
+    padding: 1rem 1.75rem !important;
   }
 
   .menu {
@@ -1675,8 +1684,7 @@ img {
     display: none;
     width: 100%;
     flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem 0 0 0;
+    gap: 0;
     margin-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
     order: 3;
@@ -1687,8 +1695,8 @@ img {
     display: none;
     width: 100%;
     flex-direction: column;
-    gap: 1rem;
-    padding: 1.25rem 0 0 0;
+    padding-top: 0.25rem;
+    gap: 0.6rem;
     margin-top: 1.25rem;
     margin-left: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -1709,13 +1717,37 @@ img {
     gap: 0;
   }
 
+  /* Pricing Grid Mobile */
+  .pricing-section .container {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+
+  .billing-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .plan-card {
+    padding: 1.5rem !important;
+    min-height: auto !important;
+  }
+
   .navbar.menu-open .nav-links,
   .navbar.menu-open .auth-links {
     display: flex;
   }
 
   .nav-links a {
-    padding: 0.85rem 0;
+    padding: 1rem 0;
     font-size: 1rem;
     color: white;
     text-decoration: none;
@@ -2843,6 +2875,7 @@ img {
 
   .trust-badges {
     flex-direction: column;
+    align-items: center;
     gap: 0.75rem;
   }
 }
