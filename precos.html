@@ -16,6 +16,45 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "2121993718537921");
+      fbq("track", "PageView");
+      fbq("track", "ViewContent");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2121993718537921&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
   </head>
 
   <body>
@@ -48,6 +87,7 @@
             <a
               href="https://app.taskypro.com.br/cadastrar"
               class="btn btn-primary hero-button"
+              onclick="fbq('track', 'Lead');"
               >COMECE AGORA</a
             >
           </div>
@@ -115,6 +155,7 @@
                   <a
                     href="https://app.taskypro.com.br/cadastrar"
                     class="btn btn-primary plan-btn"
+                    onclick="fbq('track', 'Lead');"
                     >QUERO COMEÇAR AGORA</a
                   >
                 </article>
@@ -151,6 +192,7 @@
                   <a
                     href="https://app.taskypro.com.br/cadastrar"
                     class="btn btn-white plan-btn btn-pulse"
+                    onclick="fbq('track', 'Lead');"
                     >QUERO COMEÇAR AGORA</a
                   >
                 </article>
@@ -184,6 +226,7 @@
                   <a
                     href="https://app.taskypro.com.br/cadastrar"
                     class="btn btn-primary plan-btn"
+                    onclick="fbq('track', 'Lead');"
                     >QUERO COMEÇAR AGORA</a
                   >
                 </article>
@@ -297,6 +340,7 @@
               <a
                 href="https://app.taskypro.com.br/cadastrar"
                 class="btn btn-white btn-xl"
+                onclick="fbq('track', 'Lead');"
                 >QUERO COMEÇAR AGORA</a
               >
             </div>
@@ -368,6 +412,7 @@
       href="https://api.whatsapp.com/send/?phone=5511999619803&text=Ol%C3%A1%21+Acessei+o+site+do+Tasky+Pro+e+gostaria+de+obter+mais+informa%C3%A7%C3%B5es+sobre+como+o+sistema+funciona.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"
       target="_blank"
       class="whatsapp-float"
+      onclick="fbq('track', 'Contact');"
     >
       <svg viewBox="0 0 308 308">
         <path

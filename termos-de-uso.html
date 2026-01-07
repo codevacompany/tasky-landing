@@ -15,6 +15,45 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "2121993718537921");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2121993718537921&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
     <style>
       .terms-page {
         background: #ffffff;
@@ -40,10 +79,10 @@
       }
 
       .terms-header .hero-button {
-        height: 42px;
-        min-width: 180px;
-        font-size: 12px;
-        padding: 0 24px;
+        height: 47px;
+        min-width: 210px;
+        font-size: 13px;
+        padding: 0 28px;
       }
 
       @media (max-width: 768px) {
@@ -201,22 +240,33 @@
       <header class="terms-header">
         <nav class="navbar">
           <div class="menu">
-            <a href="index.html" class="logo">
+            <div class="logo">
               <img src="assets/images/tasky-pro-white.png" alt="Tasky Logo" />
-            </a>
-            <div class="nav-links">
-              <a href="index.html#product-details">Produto</a>
-              <a href="precos.html">Preços</a>
+            </div>
+            <button
+              class="mobile-menu-toggle"
+              aria-label="Toggle menu"
+              id="mobileMenuToggle"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+              <a href="index.html">Inicio</a>
+              <a href="recursos.html">Recursos</a>
+              <a href="precos.html">Planos</a>
             </div>
           </div>
-          <div class="auth-links">
+          <div class="auth-links" id="authLinks">
             <a href="https://app.taskypro.com.br/login" class="login-btn"
               >Entrar</a
             >
             <a
               href="https://app.taskypro.com.br/cadastrar"
-              class="btn btn-primary hero-button"
-              >COMECE GRÁTIS</a
+              class="btn btn-primary hero-button btn-pulse"
+              onclick="fbq('track', 'Lead');"
+              >COMECE AGORA</a
             >
           </div>
         </nav>
@@ -526,6 +576,7 @@
       href="https://api.whatsapp.com/send/?phone=5511999619803&text=Ol%C3%A1%21+Acessei+o+site+do+Tasky+Pro+e+gostaria+de+obter+mais+informa%C3%A7%C3%B5es+sobre+como+o+sistema+funciona.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"
       target="_blank"
       class="whatsapp-float"
+      onclick="fbq('track', 'Contact');"
     >
       <svg viewBox="0 0 308 308">
         <path
