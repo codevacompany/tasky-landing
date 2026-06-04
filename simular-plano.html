@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -16,6 +16,21 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NJB7TN1HEB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NJB7TN1HEB");
+    </script>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -40,7 +55,7 @@
         window,
         document,
         "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
+        "https://connect.facebook.net/en_US/fbevents.js",
       );
       fbq("init", "2121993718537921");
       fbq("track", "PageView");
@@ -77,7 +92,7 @@
             <a
               href="https://app.taskypro.com.br/cadastrar"
               class="btn btn-primary hero-button"
-              onclick="fbq('track', 'Lead');"
+              onclick="fbq('track', 'Lead')"
               >COMECE GRÁTIS</a
             >
           </div>
@@ -265,10 +280,10 @@
       const calculationSummary = document.getElementById("calculationSummary");
       const additionalUsersRow = document.getElementById("additionalUsersRow");
       const additionalUsersText = document.getElementById(
-        "additionalUsersText"
+        "additionalUsersText",
       );
       const additionalUsersCost = document.getElementById(
-        "additionalUsersCost"
+        "additionalUsersCost",
       );
       const totalMonthlyPrice = document.getElementById("totalMonthlyPrice");
       const basePlanPrice = document.getElementById("basePlanPrice");
@@ -326,11 +341,11 @@
           }):`;
           if (isAnnual) {
             additionalUsersCost.textContent = `R$ ${formatPrice(
-              additionalCost
+              additionalCost,
             )}/mês`;
           } else {
             additionalUsersCost.textContent = `R$ ${formatPrice(
-              additionalCost
+              additionalCost,
             )}`;
           }
         } else {
@@ -341,7 +356,7 @@
         if (isAnnual && yearlyTotal) {
           annualNote.style.display = "flex";
           annualTotal.textContent = `R$ ${formatPrice(
-            yearlyTotal
+            yearlyTotal,
           )} cobrado anualmente`;
         } else {
           annualNote.style.display = "none";
@@ -371,12 +386,12 @@
         const billingPeriod = isAnnual ? "anual" : "mensal";
         const priceDisplay = isAnnual
           ? `R$ ${monthlyEquivalent.toFixed(2)}/mês (R$ ${yearlyTotal.toFixed(
-              2
+              2,
             )}/ano)`
           : `R$ ${monthlyEquivalent.toFixed(2)}/mês`;
 
         const subject = encodeURIComponent(
-          `Interesse em Plano Customizado - ${userCount} usuários - ${priceDisplay}`
+          `Interesse em Plano Customizado - ${userCount} usuários - ${priceDisplay}`,
         );
         const body = encodeURIComponent(
           `Olá,\n\nTenho interesse em assinar o Plano Customizado com as seguintes informações:\n\n` +
@@ -384,7 +399,7 @@
             `- Forma de cobrança: ${billingPeriod}\n` +
             `- Valor calculado: ${priceDisplay}\n` +
             `- Usuários adicionais: ${additionalUsers}\n\n` +
-            `Aguardo retorno para prosseguir com a assinatura.\n\nAtenciosamente`
+            `Aguardo retorno para prosseguir com a assinatura.\n\nAtenciosamente`,
         );
 
         window.location.href = `mailto:comercial@tasky.com.br?subject=${subject}&body=${body}`;
@@ -437,7 +452,7 @@
         <a
           href="https://app.taskypro.com.br/cadastrar"
           class="btn-popup"
-          onclick="fbq('track', 'Lead');"
+          onclick="fbq('track', 'Lead')"
           >COMEÇAR TESTE GRÁTIS</a
         >
         <button class="popup-dismiss" onclick="closeExitPopup()">
@@ -485,7 +500,7 @@
       href="https://api.whatsapp.com/send/?phone=5511999619803&text=Ol%C3%A1%21+Acessei+o+site+do+Tasky+Pro+e+gostaria+de+obter+mais+informa%C3%A7%C3%B5es+sobre+como+o+sistema+funciona.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"
       target="_blank"
       class="whatsapp-float"
-      onclick="fbq('track', 'Contact');"
+      onclick="fbq('track', 'Contact')"
     >
       <svg viewBox="0 0 308 308">
         <path
