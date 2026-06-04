@@ -30,6 +30,7 @@
 
       gtag("config", "G-NJB7TN1HEB");
     </script>
+    <script src="analytics.js"></script>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -280,7 +281,7 @@
             <a
               href="https://app.taskypro.com.br/cadastrar"
               class="btn btn-primary hero-button btn-pulse"
-              onclick="fbq('track', 'Lead')"
+              onclick="TaskyAnalytics.trackLead('Navegação - Comece agora', this.href)"
               >COMECE AGORA</a
             >
           </div>
@@ -591,7 +592,7 @@
       href="https://api.whatsapp.com/send/?phone=5511999619803&text=Ol%C3%A1%21+Acessei+o+site+do+Tasky+Pro+e+gostaria+de+obter+mais+informa%C3%A7%C3%B5es+sobre+como+o+sistema+funciona.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"
       target="_blank"
       class="whatsapp-float"
-      onclick="fbq('track', 'Contact')"
+      onclick="TaskyAnalytics.trackContact('WhatsApp flutuante')"
     >
       <svg viewBox="0 0 308 308">
         <path

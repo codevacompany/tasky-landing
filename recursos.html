@@ -296,6 +296,7 @@
 
       gtag("config", "G-NJB7TN1HEB");
     </script>
+    <script src="analytics.js"></script>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -324,7 +325,6 @@
       );
       fbq("init", "2121993718537921");
       fbq("track", "PageView");
-      fbq("track", "ViewContent");
     </script>
     <noscript>
       <img
@@ -335,6 +335,9 @@
       />
     </noscript>
     <!-- End Facebook Pixel Code -->
+    <script>
+      TaskyAnalytics.trackViewItemList("Recursos");
+    </script>
   </head>
 
   <body>
@@ -368,7 +371,7 @@
             <a
               href="https://app.taskypro.com.br/cadastrar"
               class="btn btn-primary hero-button btn-pulse"
-              onclick="fbq('track', 'Lead')"
+              onclick="TaskyAnalytics.trackLead('Navegação - Comece agora', this.href)"
               >COMECE AGORA</a
             >
           </div>
@@ -414,7 +417,7 @@
             <a
               href="https://app.taskypro.com.br/cadastrar"
               class="recurso-cta-btn"
-              onclick="fbq('track', 'Lead')"
+              onclick="TaskyAnalytics.trackLead('Recurso - Zero atrasos', this.href)"
               >Comece Gratuitamente</a
             >
           </div>
@@ -447,7 +450,7 @@
             <a
               href="https://app.taskypro.com.br/cadastrar"
               class="recurso-cta-btn"
-              onclick="fbq('track', 'Lead')"
+              onclick="TaskyAnalytics.trackLead('Recurso - Controle total', this.href)"
               >Comece Gratuitamente</a
             >
           </div>
@@ -480,7 +483,7 @@
             <a
               href="https://app.taskypro.com.br/cadastrar"
               class="recurso-cta-btn"
-              onclick="fbq('track', 'Lead')"
+              onclick="TaskyAnalytics.trackLead('recurso_equipe_autonoma', this.href)"
               >Comece Gratuitamente</a
             >
           </div>
@@ -513,7 +516,7 @@
             <a
               href="https://app.taskypro.com.br/cadastrar"
               class="recurso-cta-btn"
-              onclick="fbq('track', 'Lead')"
+              onclick="TaskyAnalytics.trackLead('Recurso - Delegação assertiva', this.href)"
               >Comece Gratuitamente</a
             >
           </div>
@@ -594,7 +597,7 @@
           <a
             href="https://app.taskypro.com.br/cadastrar"
             class="btn btn-white btn-pulse"
-            onclick="fbq('track', 'Lead')"
+            onclick="TaskyAnalytics.trackLead('CTA final - Recursos', this.href)"
             >QUERO COMEÇAR AGORA</a
           >
           <p class="cta-note">Sem cartão de crédito • Acesso completo</p>
@@ -661,7 +664,7 @@
       href="https://api.whatsapp.com/send/?phone=5511999619803&text=Ol%C3%A1%21+Acessei+o+site+do+Tasky+Pro+e+gostaria+de+obter+mais+informa%C3%A7%C3%B5es+sobre+como+o+sistema+funciona.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"
       target="_blank"
       class="whatsapp-float"
-      onclick="fbq('track', 'Contact')"
+      onclick="TaskyAnalytics.trackContact('WhatsApp flutuante')"
     >
       <svg viewBox="0 0 308 308">
         <path

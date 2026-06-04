@@ -31,6 +31,7 @@
 
       gtag("config", "G-NJB7TN1HEB");
     </script>
+    <script src="analytics.js"></script>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -59,7 +60,6 @@
       );
       fbq("init", "2121993718537921");
       fbq("track", "PageView");
-      fbq("track", "InitiateCheckout");
     </script>
     <noscript>
       <img
@@ -70,6 +70,9 @@
       />
     </noscript>
     <!-- End Facebook Pixel Code -->
+    <script>
+      TaskyAnalytics.trackBeginCheckout("Simulador de plano");
+    </script>
   </head>
 
   <body>
@@ -92,7 +95,7 @@
             <a
               href="https://app.taskypro.com.br/cadastrar"
               class="btn btn-primary hero-button"
-              onclick="fbq('track', 'Lead')"
+              onclick="TaskyAnalytics.trackLead('Navegação - Comece grátis', this.href)"
               >COMECE GRÁTIS</a
             >
           </div>
@@ -452,7 +455,7 @@
         <a
           href="https://app.taskypro.com.br/cadastrar"
           class="btn-popup"
-          onclick="fbq('track', 'Lead')"
+          onclick="TaskyAnalytics.trackLead('Popup de saída - Teste grátis', this.href)"
           >COMEÇAR TESTE GRÁTIS</a
         >
         <button class="popup-dismiss" onclick="closeExitPopup()">
@@ -500,7 +503,7 @@
       href="https://api.whatsapp.com/send/?phone=5511999619803&text=Ol%C3%A1%21+Acessei+o+site+do+Tasky+Pro+e+gostaria+de+obter+mais+informa%C3%A7%C3%B5es+sobre+como+o+sistema+funciona.+Poderiam+me+ajudar%3F&type=phone_number&app_absent=0"
       target="_blank"
       class="whatsapp-float"
-      onclick="fbq('track', 'Contact')"
+      onclick="TaskyAnalytics.trackContact('WhatsApp flutuante')"
     >
       <svg viewBox="0 0 308 308">
         <path
