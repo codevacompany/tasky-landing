@@ -1,50 +1,41 @@
 /**
- * Tasky Pro landing — GA4 + Meta Pixel tracking helpers.
- * Requires gtag (GA4) loaded before this script. fbq is optional.
+ * Tasky Pro landing — pushes events to dataLayer for GTM (GA4, Meta, Google Ads).
+ * Requires the GTM container snippet loaded before this script.
  */
 (function (global) {
-  function gtagEvent() {
-    if (typeof global.gtag === 'function') {
-      global.gtag.apply(global, arguments);
-    }
+  function pushEvent(payload) {
+    global.dataLayer = global.dataLayer || [];
+    global.dataLayer.push(payload);
   }
 
   function trackLead(eventLabel, linkUrl) {
-    gtagEvent('event', 'generate_lead', {
+    pushEvent({
+      event: 'generate_lead',
       event_label: eventLabel,
       link_url: linkUrl || undefined,
     });
-    if (typeof global.fbq === 'function') {
-      global.fbq('track', 'Lead');
-    }
   }
 
   function trackContact(eventLabel) {
-    gtagEvent('event', 'contact', {
+    pushEvent({
+      event: 'contact',
       method: 'WhatsApp',
       event_label: eventLabel || 'WhatsApp flutuante',
     });
-    if (typeof global.fbq === 'function') {
-      global.fbq('track', 'Contact');
-    }
   }
 
   function trackViewItemList(itemListName) {
-    gtagEvent('event', 'view_item_list', {
+    pushEvent({
+      event: 'view_item_list',
       item_list_name: itemListName,
     });
-    if (typeof global.fbq === 'function') {
-      global.fbq('track', 'ViewContent');
-    }
   }
 
   function trackBeginCheckout(itemListName) {
-    gtagEvent('event', 'begin_checkout', {
+    pushEvent({
+      event: 'begin_checkout',
       item_list_name: itemListName,
     });
-    if (typeof global.fbq === 'function') {
-      global.fbq('track', 'InitiateCheckout');
-    }
   }
 
   global.TaskyAnalytics = {
