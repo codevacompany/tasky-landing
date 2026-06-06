@@ -31,10 +31,10 @@
     });
   }
 
-  function trackBeginCheckout(itemListName) {
+  function trackPlanSimulatorView(simulatorName) {
     pushEvent({
-      event: 'begin_checkout',
-      item_list_name: itemListName,
+      event: 'view_plan_simulator',
+      simulator_name: simulatorName,
     });
   }
 
@@ -42,6 +42,6 @@
     trackLead,
     trackContact,
     trackViewItemList,
-    trackBeginCheckout,
+    trackPlanSimulatorView,
   };
 })(typeof window !== 'undefined' ? window : this);
